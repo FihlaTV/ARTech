@@ -1,0 +1,18 @@
+PODS:
+  - HexColors (2.2.1)
+  - MBProgressHUD (1.0.0)
+  - TSMessages (0.9.12):
+    - HexColors (~> 2.2.0)
+
+DEPENDENCIES:
+  - MBProgressHUD
+  - TSMessages
+
+SPEC CHECKSUMS:
+  HexColors: abfd172e329dab59888614ccba6f216cec59289d
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
+
+PODFILE CHECKSUM: 4e5fb4eadc9938e2715fede134278b72797164ab
+
+COCOAPODS: 1.1.1

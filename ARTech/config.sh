@@ -6,11 +6,11 @@ else
 	mkdir /tmp/artech
 fi
 
-if [ ! -e ./Frameworks ]; then
-	echo 'Frameworks not Exist.'
-	mkdir Frameworks
+if [ ! -e ./Libs ]; then
+	echo 'Libs not Exist.'
+	mkdir Libs
 fi
-cd Frameworks
+cd Libs
 pwd
 
 if [ ! -e /tmp/artech/EZGLib.framework.zip ]; then
