@@ -57,6 +57,5 @@ fastlane/test_output
 
 EZGLib.framework/
 opencv2.framework/
-Models/
 
 .idea/
