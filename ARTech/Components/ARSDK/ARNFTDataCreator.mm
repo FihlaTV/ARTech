@@ -308,7 +308,7 @@ int setDPI( int dpi , int xsize, int ysize)
         [[NSFileManager defaultManager] createDirectoryAtURL:nftSetsDir withIntermediateDirectories:YES attributes:nil error:nil];
     }
     
-    NSString * filename = @"test";//[NSString stringWithFormat:@"%llx", (long long)[NSDate timeIntervalSinceReferenceDate] * 1000];
+    NSString * filename = [NSString stringWithFormat:@"%llx", (long long)[NSDate timeIntervalSinceReferenceDate] * 1000];
     NSURL *savePathUrl = [NSURL fileURLWithPathComponents:@[nftSetsDir.path, filename]];
     return savePathUrl.path;
 }

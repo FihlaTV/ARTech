@@ -44,7 +44,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
     if (cell) {
-         NSString *sectionKey = self.sections[indexPath.section];
+        NSString *sectionKey = self.sections[indexPath.section];
         cell.textLabel.font = [UIFont systemFontOfSize:15];
         cell.textLabel.text =  [self.titles[sectionKey] allKeys][indexPath.row];
     }
