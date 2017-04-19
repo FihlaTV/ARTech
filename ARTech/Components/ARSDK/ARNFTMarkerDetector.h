@@ -10,5 +10,6 @@
 
 
 @interface ARNFTMarkerDetector : NSObject <ARMarkerDetector>
+- (instancetype)initWithMarkerFile:(NSString *)markerFilePath;
 - (CGSize)markerSize;
 @end

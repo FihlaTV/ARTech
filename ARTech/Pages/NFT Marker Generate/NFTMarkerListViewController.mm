@@ -7,6 +7,8 @@
 #import "LocalNFTMarkerManager.h"
 #import "LocalNFTMarkerData.h"
 
+#import "NFTARViewController.h"
+
 @interface NFTMarkerListViewController ()
 @property (strong, nonatomic) NSArray *markers;
 @end
@@ -31,7 +33,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];\
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     LocalNFTMarkerData *data = self.markers[indexPath.row];
     UIImage *markerImage = [UIImage imageWithContentsOfFile:[data imageUrl].path];
     cell.imageView.image = markerImage;
@@ -44,4 +46,25 @@
 }
 
 #pragma mark - Table View Delegate
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        LocalNFTMarkerData *data = self.markers[indexPath.row];
+        [LocalNFTMarkerManager removeMarker:data];
+        self.markers = [LocalNFTMarkerManager loadNFTMarkers];
+        [self.tableView reloadData];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.needGotoNFTAR) {
+        NFTARViewController * nftarViewController = [NFTARViewController new];
+        nftarViewController.marker = self.markers[indexPath.row];
+        [self.navigationController pushViewController:nftarViewController animated:YES];
+    }
+}
+
 @end

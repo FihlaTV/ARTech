@@ -4,9 +4,12 @@
 //
 
 #import "NFTARViewController.h"
-#import <EZGLib/EZGL.h>
 #import "ARNFTMarkerDetector.h"
 #import "ARMarkerPose.h"
+#import "LocalNFTMarkerData.h"
+#import "ModelManager.h"
+
+#import <EZGLib/EZGL.h>
 
 #define  Bit(n) (0x00000001 << n)
 
@@ -30,22 +33,15 @@ enum CollisionTypes {
 - (void)createMonkey:(ELVector3)position {
     ELFloat width = 17 * 3;
     ELFloat height = 17 * 3;
-    ELFloat wallHeight = 3.5;
-    ELVector3 floorSize = ELVector3Make(width,0.5,height);
-    GLuint diffuseMap_head,diffuseMap_body,diffuseMap_m4, diffuseMap;
-    diffuseMap_head = ELTexture::texture(ELAssets::shared()->findFile("head01.png"))->value;
-    diffuseMap_body = ELTexture::texture(ELAssets::shared()->findFile("body01.png"))->value;
-    diffuseMap_m4 = ELTexture::texture(ELAssets::shared()->findFile("m4tex_2.png"))->value;
-    diffuseMap = ELTexture::texture(ELAssets::shared()->findFile("wood_01.jpg"))->value;
-    
+
     ELGameObject *gameObject = new ELGameObject(world);
     world->addNode(gameObject);
     gameObject->transform->position = position;
     gameObject->transform->quaternion = ELQuaternionMakeWithAngleAndAxis(M_PI / 2, 1, 0, 0);
     gameObject->transform->scale = ELVector3Make(0.3,0.3,0.3);
-    
-    //        std::vector<ELMeshGeometry *> geometries = ELFBXLoader::loadFromFile(ELAssets::shared()->findFile("Airbus A310.fbx").c_str());
-    std::vector<ELMeshGeometry *> geometries = ELFBXLoader::loadFromFile(ELAssets::shared()->findFile("dragon.fbx").c_str());
+
+    NSString *path = [ModelManager loadSelected3DModel];
+    std::vector<ELMeshGeometry *> geometries = ELFBXLoader::loadFromFile([path UTF8String]);
     for (int i = 0; i < geometries.size(); ++i) {
         auto animations = geometries.at(i)->animations;
         auto iter = animations.begin();
@@ -92,7 +88,7 @@ ELGameObject * createCubeGameObject(ELWorld *world, ELVector3 size,ELVector3 pos
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.markDetector = [ARNFTMarkerDetector new];
+    self.markDetector = [[ARNFTMarkerDetector alloc] initWithMarkerFile:self.marker.url.path];
     world = [self world];
     world->physicsWorld->setGravity(ELVector3Make(0,0,-100));
 }

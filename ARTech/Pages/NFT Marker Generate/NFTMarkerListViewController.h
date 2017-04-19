@@ -7,4 +7,5 @@
 
 
 @interface NFTMarkerListViewController : UITableViewController
+@property (assign, nonatomic) BOOL needGotoNFTAR;
 @end

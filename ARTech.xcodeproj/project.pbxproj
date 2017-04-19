@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1BF7ABE2E85E97D6F8FFCA15 /* libPods-ARTechUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1150CDEE2BEA9B3076709AC0 /* libPods-ARTechUITests.a */; };
+		64AB809548BF0CAA4FBD3E2C /* ModelSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AB84FD3A4B5FA89F14B9D8 /* ModelSelectViewController.m */; };
 		64AB82591D9B9400D7FBF52C /* LocalNFTMarkerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AB833DCCCE13059DCE0AA3 /* LocalNFTMarkerManager.m */; };
-		64AB86479C036608D267AB10 /* NFTMarkerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AB83B181E2D0F663498F05 /* NFTMarkerListViewController.m */; };
+		64AB86479C036608D267AB10 /* NFTMarkerListViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64AB83B181E2D0F663498F05 /* NFTMarkerListViewController.mm */; };
 		64AB87D54CDBC32B9FE59242 /* LocalNFTMarkerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AB8E73D1FA7ED10BCD8D73 /* LocalNFTMarkerData.m */; };
 		64AB87EDFF00AB968F16C379 /* NFTMarkerPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AB835DF414A9A0864A29A3 /* NFTMarkerPreviewViewController.m */; };
+		64AB8C531840F14420E25392 /* ModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AB8BC3DB685B0B8E74DEDC /* ModelManager.m */; };
 		64AB8CECEE5A43FDBA827C97 /* NFDetectViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64AB8480C5D5795867BB0C0B /* NFDetectViewController.mm */; };
 		798F88096CAEA434001576DC /* libPods-ARTechTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98014668A11946243F7CCEB1 /* libPods-ARTechTests.a */; };
 		878537225F8EDBD6411D7F0D /* libPods-ARTech.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1E57CB560071F69409D2BA /* libPods-ARTech.a */; };
@@ -614,7 +616,7 @@
 		8EC29A201EA0B0F30059D514 /* EZGLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC297B41EA0B0F20059D514 /* EZGLib.framework */; };
 		8EC29A211EA0B0F30059D514 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC297B51EA0B0F20059D514 /* opencv2.framework */; };
 		8EC29A221EA0B0F30059D514 /* ARBaseViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EC297B81EA0B0F20059D514 /* ARBaseViewController.mm */; };
-		8EC29A231EA0B0F30059D514 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC297BA1EA0B0F20059D514 /* HomeViewController.m */; };
+		8EC29A231EA0B0F30059D514 /* HomeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EC297BA1EA0B0F20059D514 /* HomeViewController.mm */; };
 		8EC29A251EA0B0F30059D514 /* NFTARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EC297BE1EA0B0F20059D514 /* NFTARViewController.mm */; };
 		8EC29A261EA0B0F30059D514 /* SquareARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EC297C01EA0B0F20059D514 /* SquareARViewController.mm */; };
 		8EC29A271EA0B0F30059D514 /* dragon.fbx in Resources */ = {isa = PBXBuildFile; fileRef = 8EC297C31EA0B0F20059D514 /* dragon.fbx */; };
@@ -693,13 +695,17 @@
 /* Begin PBXFileReference section */
 		1150CDEE2BEA9B3076709AC0 /* libPods-ARTechUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ARTechUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56435A33451C4445F6C55F75 /* Pods-ARTech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTech.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARTech/Pods-ARTech.debug.xcconfig"; sourceTree = "<group>"; };
+		64AB805FB843E54AEAB688E4 /* ModelSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelSelectViewController.h; sourceTree = "<group>"; };
 		64AB82E4ECCE9AB651F1E6E7 /* NFTMarkerPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFTMarkerPreviewViewController.h; sourceTree = "<group>"; };
 		64AB833DCCCE13059DCE0AA3 /* LocalNFTMarkerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalNFTMarkerManager.m; sourceTree = "<group>"; };
 		64AB835DF414A9A0864A29A3 /* NFTMarkerPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFTMarkerPreviewViewController.m; sourceTree = "<group>"; };
-		64AB83B181E2D0F663498F05 /* NFTMarkerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFTMarkerListViewController.m; sourceTree = "<group>"; };
+		64AB83B181E2D0F663498F05 /* NFTMarkerListViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NFTMarkerListViewController.mm; sourceTree = "<group>"; };
 		64AB8480C5D5795867BB0C0B /* NFDetectViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NFDetectViewController.mm; sourceTree = "<group>"; };
+		64AB84FD3A4B5FA89F14B9D8 /* ModelSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelSelectViewController.m; sourceTree = "<group>"; };
+		64AB85806157D0A16FAF38DA /* ModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelManager.h; sourceTree = "<group>"; };
 		64AB87AAF26DD21246F8B99C /* LocalNFTMarkerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNFTMarkerData.h; sourceTree = "<group>"; };
 		64AB890BD124F632E12630B2 /* LocalNFTMarkerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNFTMarkerManager.h; sourceTree = "<group>"; };
+		64AB8BC3DB685B0B8E74DEDC /* ModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelManager.m; sourceTree = "<group>"; };
 		64AB8DFC511873269325DED5 /* NFDetectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFDetectViewController.h; sourceTree = "<group>"; };
 		64AB8E1505B6AE9E2CB1D347 /* NFTMarkerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFTMarkerListViewController.h; sourceTree = "<group>"; };
 		64AB8E73D1FA7ED10BCD8D73 /* LocalNFTMarkerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalNFTMarkerData.m; sourceTree = "<group>"; };
@@ -1434,7 +1440,7 @@
 		8EC297B71EA0B0F20059D514 /* ARBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARBaseViewController.h; sourceTree = "<group>"; };
 		8EC297B81EA0B0F20059D514 /* ARBaseViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARBaseViewController.mm; sourceTree = "<group>"; };
 		8EC297B91EA0B0F20059D514 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		8EC297BA1EA0B0F20059D514 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		8EC297BA1EA0B0F20059D514 /* HomeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HomeViewController.mm; sourceTree = "<group>"; };
 		8EC297BD1EA0B0F20059D514 /* NFTARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFTARViewController.h; sourceTree = "<group>"; };
 		8EC297BE1EA0B0F20059D514 /* NFTARViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NFTARViewController.mm; sourceTree = "<group>"; };
 		8EC297BF1EA0B0F20059D514 /* SquareARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareARViewController.h; sourceTree = "<group>"; };
@@ -1567,10 +1573,19 @@
 				64AB8DFC511873269325DED5 /* NFDetectViewController.h */,
 				64AB835DF414A9A0864A29A3 /* NFTMarkerPreviewViewController.m */,
 				64AB8480C5D5795867BB0C0B /* NFDetectViewController.mm */,
-				64AB83B181E2D0F663498F05 /* NFTMarkerListViewController.m */,
+				64AB83B181E2D0F663498F05 /* NFTMarkerListViewController.mm */,
 				64AB8E1505B6AE9E2CB1D347 /* NFTMarkerListViewController.h */,
 			);
 			path = "NFT Marker Generate";
+			sourceTree = "<group>";
+		};
+		64AB86849093A5DC167862ED /* 3D Model Manage */ = {
+			isa = PBXGroup;
+			children = (
+				64AB8BC3DB685B0B8E74DEDC /* ModelManager.m */,
+				64AB85806157D0A16FAF38DA /* ModelManager.h */,
+			);
+			path = "3D Model Manage";
 			sourceTree = "<group>";
 		};
 		64AB89CDD6A91D9A251D36B0 /* Local Marker Manage */ = {
@@ -1679,6 +1694,7 @@
 				8EC294ED1EA0B0F10059D514 /* UINavigationController+Appearance.h */,
 				8EC294EE1EA0B0F10059D514 /* UINavigationController+Appearance.m */,
 				64AB89CDD6A91D9A251D36B0 /* Local Marker Manage */,
+				64AB86849093A5DC167862ED /* 3D Model Manage */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -2667,12 +2683,14 @@
 				8EC297B71EA0B0F20059D514 /* ARBaseViewController.h */,
 				8EC297B81EA0B0F20059D514 /* ARBaseViewController.mm */,
 				8EC297B91EA0B0F20059D514 /* HomeViewController.h */,
-				8EC297BA1EA0B0F20059D514 /* HomeViewController.m */,
+				8EC297BA1EA0B0F20059D514 /* HomeViewController.mm */,
 				8EC297BD1EA0B0F20059D514 /* NFTARViewController.h */,
 				8EC297BE1EA0B0F20059D514 /* NFTARViewController.mm */,
 				8EC297BF1EA0B0F20059D514 /* SquareARViewController.h */,
 				8EC297C01EA0B0F20059D514 /* SquareARViewController.mm */,
 				64AB82D9AAC10D0423BDE7B3 /* NFT Marker Generate */,
+				64AB84FD3A4B5FA89F14B9D8 /* ModelSelectViewController.m */,
+				64AB805FB843E54AEAB688E4 /* ModelSelectViewController.h */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -3709,7 +3727,7 @@
 				8EC29A251EA0B0F30059D514 /* NFTARViewController.mm in Sources */,
 				8EC29A311EA0B0F30059D514 /* ExampleCollector.m in Sources */,
 				8EC297E91EA0B0F20059D514 /* UINavigationController+Appearance.m in Sources */,
-				8EC29A231EA0B0F30059D514 /* HomeViewController.m in Sources */,
+				8EC29A231EA0B0F30059D514 /* HomeViewController.mm in Sources */,
 				8EC297E61EA0B0F20059D514 /* ARNFTDataCreator.mm in Sources */,
 				8EC297E01EA0B0F20059D514 /* ARMarkerDetector.mm in Sources */,
 				8EC297DE1EA0B0F20059D514 /* ARCameraCapture.mm in Sources */,
@@ -3722,9 +3740,11 @@
 				8EC297DB1EA0B0F20059D514 /* AppDelegate.m in Sources */,
 				64AB87EDFF00AB968F16C379 /* NFTMarkerPreviewViewController.m in Sources */,
 				64AB8CECEE5A43FDBA827C97 /* NFDetectViewController.mm in Sources */,
-				64AB86479C036608D267AB10 /* NFTMarkerListViewController.m in Sources */,
+				64AB86479C036608D267AB10 /* NFTMarkerListViewController.mm in Sources */,
 				64AB82591D9B9400D7FBF52C /* LocalNFTMarkerManager.m in Sources */,
 				64AB87D54CDBC32B9FE59242 /* LocalNFTMarkerData.m in Sources */,
+				64AB809548BF0CAA4FBD3E2C /* ModelSelectViewController.m in Sources */,
+				64AB8C531840F14420E25392 /* ModelManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

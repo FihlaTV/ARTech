@@ -5,7 +5,8 @@
 
 #import <Foundation/Foundation.h>
 
-
+@class LocalNFTMarkerData;
 @interface LocalNFTMarkerManager : NSObject
 + (NSArray *)loadNFTMarkers;
++ (void)removeMarker:(LocalNFTMarkerData *)data;
 @end

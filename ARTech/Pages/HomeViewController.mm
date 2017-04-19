@@ -4,6 +4,7 @@
 //
 
 #import "HomeViewController.h"
+#import "NFTMarkerListViewController.h"
 
 @interface HomeViewController ()
 @property  (strong, nonatomic) NSDictionary * titles;
@@ -36,7 +37,8 @@
             },
             @"工具" : @{
                     @"制作NFT Marker" : @"gotoNFDetect",
-                    @"查看本地NFT Marker" : @"gotoNFTList"
+                    @"查看本地NFT Marker" : @"gotoNFTList",
+                    @"选择展示的3D模型" : @"gotoSelect3DModel"
             },
     };
 }
@@ -74,7 +76,9 @@
 }
 
 - (UIViewController *)gotoNFTMarker {
-    return (UIViewController *)[NSClassFromString(@"NFTARViewController") new];
+    NFTMarkerListViewController *vc = (NFTMarkerListViewController *)[NSClassFromString(@"NFTMarkerListViewController") new];
+    vc.needGotoNFTAR = YES;
+    return vc;
 }
 
 - (UIViewController *)gotoNFDetect {
@@ -83,6 +87,10 @@
 
 - (UIViewController *)gotoNFTList {
     return (UIViewController *)[NSClassFromString(@"NFTMarkerListViewController") new];
+}
+
+- (UIViewController *)gotoSelect3DModel {
+    return (UIViewController *)[NSClassFromString(@"ModelSelectViewController") new];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

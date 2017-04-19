@@ -24,12 +24,14 @@
 
     NSArray *markers;
 }
+@property (copy, nonatomic) NSString * markerFilePath;
 @end
 
 @implementation ARNFTMarkerDetector
-- (instancetype)init {
+- (instancetype)initWithMarkerFile:(NSString *)markerFilePath {
     self = [super init];
     if (self) {
+        self.markerFilePath = markerFilePath;
         detectedPage = -2;
     }
     return self;
@@ -87,21 +89,10 @@
 
 
 - (BOOL)setupPattern {
-    NSString *markerConfigDataFilename = @"markers.dat";
-    if ((markers = [ARMarker newMarkersFromConfigDataFile:markerConfigDataFilename arPattHandle:NULL arPatternDetectionMode:NULL]) == nil) {
+    if ((markers = [ARMarker newMarkersFromConfigDataFile:self.markerFilePath arPattHandle:NULL arPatternDetectionMode:NULL]) == nil) {
         NSLog(@"Error loading markers.\n");
         return NO;
     }
-//    NSArray<NSString *> *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask , YES);
-//    NSString *docPath = paths[0];
-//
-//    NSArray *subpaths = [[NSFileManager defaultManager] subpathsAtPath:docPath];
-//    for (int i = 0; i < subpaths.count; ++i) {
-//        NSData *data = [NSData dataWithContentsOfFile:[docPath stringByAppendingFormat:@"/%@",subpaths[i]]];
-//        NSLog(@"%@", [data description]);
-//    }
-//    ARMarkerNFT *markerNFT = [[ARMarkerNFT alloc] initWithNFTDataSetPathname:[[docPath stringByAppendingString:@"/ntf"] UTF8String]];
-//    markers = @[markerNFT];
     [self loadNFTData];
     return YES;
 }

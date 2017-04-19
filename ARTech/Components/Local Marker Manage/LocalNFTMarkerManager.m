@@ -22,4 +22,18 @@
     }
     return [localNFTMarkers copy];
 }
+
++ (void)removeMarker:(LocalNFTMarkerData *)data {
+    NSString *docPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    NSURL *nftSetsDir = [NSURL fileURLWithPathComponents:@[docPath, @"nft_sets"]];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:[nftSetsDir path]]) {
+        NSArray *subpaths = [[NSFileManager defaultManager] subpathsAtPath:[nftSetsDir path]];
+        for (NSString * subpath in subpaths) {
+            if ([subpath hasPrefix:data.name]) {
+                NSURL * markerUrl = [nftSetsDir URLByAppendingPathComponent:subpath];
+                [[NSFileManager defaultManager] removeItemAtURL:markerUrl error:nil];
+            }
+        }
+    }
+}
 @end
