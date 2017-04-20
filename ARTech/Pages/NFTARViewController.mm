@@ -92,8 +92,13 @@ ELGameObject * createCubeGameObject(ELWorld *world, ELVector3 size,ELVector3 pos
     world = [self world];
     world->physicsWorld->setGravity(ELVector3Make(0,0,-100));
 }
+
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+}
+
+- (void)dealloc {
+    ELTexture::clearCache();
 }
 
 #pragma mark - Provide Marker Detector

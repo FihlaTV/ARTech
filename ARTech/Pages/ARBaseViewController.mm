@@ -63,6 +63,7 @@
 
 - (void)dealloc {
     [self.cameraCapture endCapture];
+    ELTexture::clearCache();
     delete world;
 }
 

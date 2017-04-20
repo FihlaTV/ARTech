@@ -34,7 +34,8 @@ static void captureStartCallback(void *userdata);
     self.openDeviceHandler = handler;
     // See http://www.artoolworks.com/support/library/Configuring_video_capture_in_ARToolKit_Professional#AR_VIDEO_DEVICE_IPHONE
     // -format=BGRA
-    char *vconf = "-device=iPhone -preset=480p";
+    char *vconf = "-device=iPhone";
+    // -preset=480p
     if (!(self.videoID = ar2VideoOpenAsync(vconf, captureStartCallback, (__bridge void *)(self)))) {
         NSLog(@"Error: Unable to open connection to camera.\n");
         [self endCapture];

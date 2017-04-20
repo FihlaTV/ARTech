@@ -620,7 +620,6 @@
 		8EC29A251EA0B0F30059D514 /* NFTARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EC297BE1EA0B0F20059D514 /* NFTARViewController.mm */; };
 		8EC29A261EA0B0F30059D514 /* SquareARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EC297C01EA0B0F20059D514 /* SquareARViewController.mm */; };
 		8EC29A271EA0B0F30059D514 /* dragon.fbx in Resources */ = {isa = PBXBuildFile; fileRef = 8EC297C31EA0B0F20059D514 /* dragon.fbx */; };
-		8EC29A281EA0B0F30059D514 /* humanoid.fbx in Resources */ = {isa = PBXBuildFile; fileRef = 8EC297C41EA0B0F20059D514 /* humanoid.fbx */; };
 		8EC29A291EA0B0F30059D514 /* camera_para.dat in Resources */ = {isa = PBXBuildFile; fileRef = 8EC297C61EA0B0F20059D514 /* camera_para.dat */; };
 		8EC29A2A1EA0B0F30059D514 /* hiro.patt in Resources */ = {isa = PBXBuildFile; fileRef = 8EC297C71EA0B0F20059D514 /* hiro.patt */; };
 		8EC29A2B1EA0B0F30059D514 /* markers.dat in Resources */ = {isa = PBXBuildFile; fileRef = 8EC297C81EA0B0F20059D514 /* markers.dat */; };
@@ -1446,7 +1445,6 @@
 		8EC297BF1EA0B0F20059D514 /* SquareARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareARViewController.h; sourceTree = "<group>"; };
 		8EC297C01EA0B0F20059D514 /* SquareARViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SquareARViewController.mm; sourceTree = "<group>"; };
 		8EC297C31EA0B0F20059D514 /* dragon.fbx */ = {isa = PBXFileReference; lastKnownFileType = file; path = dragon.fbx; sourceTree = "<group>"; };
-		8EC297C41EA0B0F20059D514 /* humanoid.fbx */ = {isa = PBXFileReference; lastKnownFileType = file; path = humanoid.fbx; sourceTree = "<group>"; };
 		8EC297C61EA0B0F20059D514 /* camera_para.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = camera_para.dat; sourceTree = "<group>"; };
 		8EC297C71EA0B0F20059D514 /* hiro.patt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hiro.patt; sourceTree = "<group>"; };
 		8EC297C81EA0B0F20059D514 /* markers.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = markers.dat; sourceTree = "<group>"; };
@@ -2711,7 +2709,6 @@
 			isa = PBXGroup;
 			children = (
 				8EC297C31EA0B0F20059D514 /* dragon.fbx */,
-				8EC297C41EA0B0F20059D514 /* humanoid.fbx */,
 			);
 			path = "3D Models";
 			sourceTree = "<group>";
@@ -3129,7 +3126,6 @@
 				8EC29A6D1EA0B21D0059D514 /* vtx_clip_plane.glsl in Resources */,
 				8EC298D11EA0B0F20059D514 /* Skeleton in Resources */,
 				8EC299561EA0B0F20059D514 /* ForceOperator in Resources */,
-				8EC29A281EA0B0F30059D514 /* humanoid.fbx in Resources */,
 				8EC29A781EA0B21D0059D514 /* vtx_video_disp.glsl in Resources */,
 				8EC297FD1EA0B0F20059D514 /* AudioStream in Resources */,
 				8EC298901EA0B0F20059D514 /* TransferFunction in Resources */,

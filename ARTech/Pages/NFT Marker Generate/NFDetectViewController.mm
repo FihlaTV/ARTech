@@ -21,8 +21,6 @@
     uint8_t *waitingPlane;
     cv::KeyPoint first;
     BOOL ptValid;
-    ELGameObject *nfPlane;
-    ELTexture *featureDetectTexture;
     BOOL needCapture;
     BOOL isGenNFT;
     BOOL isProcessingStrengthDetect;
@@ -51,7 +49,6 @@ ELGameObject * createVideoPlane3(ELWorld *world, ELVector2 size, GLuint diffuseM
     self.nfDetector = [ARNaturalFeatureDetector new];
     ptValid = NO;
     needCapture = NO;
-    featureDetectTexture = ELTexture::texture(ELAssets::shared()->findFile("particle_point.png"));
 
     [self setupNavigationBar];
     [self setupDetectStrengthLabel];
@@ -62,6 +59,12 @@ ELGameObject * createVideoPlane3(ELWorld *world, ELVector2 size, GLuint diffuseM
 }
 
 - (void)dealloc {
+    if (waitingPlane) {
+        free(waitingPlane);
+    }
+    if (detectingPlane) {
+        free(detectingPlane);
+    }
 
 }
 
@@ -86,7 +89,7 @@ ELGameObject * createVideoPlane3(ELWorld *world, ELVector2 size, GLuint diffuseM
         isProcessingStrengthDetect = YES;
         static std::vector<cv::KeyPoint> kpts;
         dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
-        [self copyBuf:buffer->bufPlanes[0] to:waitingPlane size:self.cameraCapture.arParamLT->paramLTf.xsize * self.cameraCapture.arParamLT->paramLTf.ysize * sizeof(uint8_t)];
+        [self copyBuf:buffer->bufPlanes[0] to:waitingPlane size:self.cameraCapture.arParamLT->param.xsize * self.cameraCapture.arParamLT->param.ysize * sizeof(uint8_t)];
         dispatch_semaphore_signal(self.semaphore);
         dispatch_async(self.detectQueue, ^{
             dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
@@ -94,7 +97,7 @@ ELGameObject * createVideoPlane3(ELWorld *world, ELVector2 size, GLuint diffuseM
             waitingPlane = detectingPlane;
             detectingPlane = swapTemp;
             dispatch_semaphore_signal(self.semaphore);
-            std::vector<cv::KeyPoint> keyPts = [self.nfDetector detectFeatures:detectingPlane size:CGSizeMake(self.cameraCapture.arParamLT->paramLTf.xsize, self.cameraCapture.arParamLT->paramLTf.ysize)];
+            std::vector<cv::KeyPoint> keyPts = [self.nfDetector detectFeatures:detectingPlane size:CGSizeMake(self.cameraCapture.arParamLT->param.xsize, self.cameraCapture.arParamLT->param.ysize)];
             if (keyPts.size() > 0) {
                 first = keyPts.at(keyPts.size() - 1);
                 ptValid = YES;
@@ -114,7 +117,7 @@ ELGameObject * createVideoPlane3(ELWorld *world, ELVector2 size, GLuint diffuseM
 }
 
 -(void)arDidBeganDetect {
-    int bufSize = self.cameraCapture.arParamLT->paramLTf.xsize * self.cameraCapture.arParamLT->paramLTf.ysize;
+    int bufSize = self.cameraCapture.arParamLT->param.xsize * self.cameraCapture.arParamLT->param.ysize;
     waitingPlane = (uint8_t *)malloc(bufSize);
     detectingPlane = (uint8_t *)malloc(bufSize);
     memset(waitingPlane, 0xaa, bufSize);

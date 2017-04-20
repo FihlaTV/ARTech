@@ -38,12 +38,12 @@
 }
 
 - (void)dealloc {
+    trackingInitQuit(&threadHandle);
+    threadHandle = NULL;
     kpmDeleteHandle(&kpmHandle);
     kpmHandle = NULL;
     ar2DeleteHandle(&ar2Handle);
     ar2Handle = NULL;
-    trackingInitQuit(&threadHandle);
-    threadHandle = NULL;
 }
 
 - (CGSize)size {
