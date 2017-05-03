@@ -7,6 +7,7 @@
 #import <EZGLib/EZGL.h>
 #import "ARSquareMarkerDetector.h"
 #import "ARMarkerPose.h"
+#import "LocalSquareMarkerData.h"
 
 @interface SquareARViewController () {
     ELWorld *world;
@@ -63,7 +64,7 @@ ELGameObject * createCubeGameObject2(ELWorld *world, ELVector3 size,ELVector3 po
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.markDetector = [ARSquareMarkerDetector new];
+    self.markDetector = [[ARSquareMarkerDetector alloc]initWithMarkerFile:[self.marker.url path]];
     world = [self world];
     world->physicsWorld->setGravity(ELVector3Make(0,0,-100));
 }

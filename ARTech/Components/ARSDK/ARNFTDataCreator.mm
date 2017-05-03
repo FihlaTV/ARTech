@@ -61,6 +61,8 @@ static int                  featureDensity = -1;
 static int                  occ_size = -1;
 
 int setDPI( int dpi , int xsize, int ysize);
+typedef void (*GenNFTDataProgress)(float progress);
+
 
 void gen_main(ARNFTDataGenParam param, uint8_t *imageData, CGSize imageSize, int dpi, int numberOfChannel, const char *resultSavePath)
 {

@@ -18,6 +18,16 @@
 		798F88096CAEA434001576DC /* libPods-ARTechTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98014668A11946243F7CCEB1 /* libPods-ARTechTests.a */; };
 		878537225F8EDBD6411D7F0D /* libPods-ARTech.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1E57CB560071F69409D2BA /* libPods-ARTech.a */; };
 		8E37566C1E790BC6003C3CFB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E37566B1E790BC6003C3CFB /* libc++.tbd */; };
+		8E4B1B1E1EB9A40E00207B0B /* 人民币.fset in Resources */ = {isa = PBXBuildFile; fileRef = 8E4B1B151EB9A40E00207B0B /* 人民币.fset */; };
+		8E4B1B1F1EB9A40E00207B0B /* 人民币.fset3 in Resources */ = {isa = PBXBuildFile; fileRef = 8E4B1B161EB9A40E00207B0B /* 人民币.fset3 */; };
+		8E4B1B201EB9A40E00207B0B /* 人民币.iset in Resources */ = {isa = PBXBuildFile; fileRef = 8E4B1B171EB9A40E00207B0B /* 人民币.iset */; };
+		8E4B1B211EB9A40E00207B0B /* 人民币.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E4B1B181EB9A40E00207B0B /* 人民币.jpg */; };
+		8E4B1B221EB9A40E00207B0B /* 人民币.nftmarker in Resources */ = {isa = PBXBuildFile; fileRef = 8E4B1B191EB9A40E00207B0B /* 人民币.nftmarker */; };
+		8E4B1B231EB9A40E00207B0B /* hiro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E4B1B1C1EB9A40E00207B0B /* hiro.jpg */; };
+		8E4B1B241EB9A40E00207B0B /* hiro.sqmarker in Resources */ = {isa = PBXBuildFile; fileRef = 8E4B1B1D1EB9A40E00207B0B /* hiro.sqmarker */; };
+		8E4B1B271EB9A44C00207B0B /* LocalSquareMarkerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B1B261EB9A44C00207B0B /* LocalSquareMarkerManager.m */; };
+		8E4B1B2A1EB9A46900207B0B /* LocalSquareMarkerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B1B291EB9A46900207B0B /* LocalSquareMarkerData.m */; };
+		8E4B1B2E1EB9A5BC00207B0B /* SquareMarkerListViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B1B2D1EB9A5BC00207B0B /* SquareMarkerListViewController.mm */; };
 		8E7EDE981DA8CC1000C8FBEA /* ARTechTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7EDE971DA8CC1000C8FBEA /* ARTechTests.m */; };
 		8E7EDEA31DA8CC1000C8FBEA /* ARTechUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7EDEA21DA8CC1000C8FBEA /* ARTechUITests.m */; };
 		8E7EE8F31DA8CD9E00C8FBEA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EE8F21DA8CD9E00C8FBEA /* QuartzCore.framework */; };
@@ -621,9 +631,6 @@
 		8EC29A261EA0B0F30059D514 /* SquareARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EC297C01EA0B0F20059D514 /* SquareARViewController.mm */; };
 		8EC29A271EA0B0F30059D514 /* dragon.fbx in Resources */ = {isa = PBXBuildFile; fileRef = 8EC297C31EA0B0F20059D514 /* dragon.fbx */; };
 		8EC29A291EA0B0F30059D514 /* camera_para.dat in Resources */ = {isa = PBXBuildFile; fileRef = 8EC297C61EA0B0F20059D514 /* camera_para.dat */; };
-		8EC29A2A1EA0B0F30059D514 /* hiro.patt in Resources */ = {isa = PBXBuildFile; fileRef = 8EC297C71EA0B0F20059D514 /* hiro.patt */; };
-		8EC29A2B1EA0B0F30059D514 /* markers.dat in Resources */ = {isa = PBXBuildFile; fileRef = 8EC297C81EA0B0F20059D514 /* markers.dat */; };
-		8EC29A2C1EA0B0F30059D514 /* models.dat in Resources */ = {isa = PBXBuildFile; fileRef = 8EC297C91EA0B0F20059D514 /* models.dat */; };
 		8EC29A2D1EA0B0F30059D514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC297CA1EA0B0F20059D514 /* Assets.xcassets */; };
 		8EC29A2E1EA0B0F30059D514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC297CB1EA0B0F20059D514 /* LaunchScreen.storyboard */; };
 		8EC29A2F1EA0B0F30059D514 /* ELTextureImp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EC297CF1EA0B0F20059D514 /* ELTextureImp.mm */; };
@@ -711,6 +718,19 @@
 		73DE39163477CE175650F450 /* Pods-ARTechTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTechTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARTechTests/Pods-ARTechTests.debug.xcconfig"; sourceTree = "<group>"; };
 		747EB5A569C07118FB6A9783 /* Pods-ARTechUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTechUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARTechUITests/Pods-ARTechUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E37566B1E790BC6003C3CFB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		8E4B1B151EB9A40E00207B0B /* 人民币.fset */ = {isa = PBXFileReference; lastKnownFileType = file; path = "人民币.fset"; sourceTree = "<group>"; };
+		8E4B1B161EB9A40E00207B0B /* 人民币.fset3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "人民币.fset3"; sourceTree = "<group>"; };
+		8E4B1B171EB9A40E00207B0B /* 人民币.iset */ = {isa = PBXFileReference; lastKnownFileType = file; path = "人民币.iset"; sourceTree = "<group>"; };
+		8E4B1B181EB9A40E00207B0B /* 人民币.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "人民币.jpg"; sourceTree = "<group>"; };
+		8E4B1B191EB9A40E00207B0B /* 人民币.nftmarker */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "人民币.nftmarker"; sourceTree = "<group>"; };
+		8E4B1B1C1EB9A40E00207B0B /* hiro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hiro.jpg; sourceTree = "<group>"; };
+		8E4B1B1D1EB9A40E00207B0B /* hiro.sqmarker */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hiro.sqmarker; sourceTree = "<group>"; };
+		8E4B1B251EB9A44C00207B0B /* LocalSquareMarkerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalSquareMarkerManager.h; sourceTree = "<group>"; };
+		8E4B1B261EB9A44C00207B0B /* LocalSquareMarkerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalSquareMarkerManager.m; sourceTree = "<group>"; };
+		8E4B1B281EB9A46900207B0B /* LocalSquareMarkerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalSquareMarkerData.h; sourceTree = "<group>"; };
+		8E4B1B291EB9A46900207B0B /* LocalSquareMarkerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalSquareMarkerData.m; sourceTree = "<group>"; };
+		8E4B1B2C1EB9A5BC00207B0B /* SquareMarkerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareMarkerListViewController.h; sourceTree = "<group>"; };
+		8E4B1B2D1EB9A5BC00207B0B /* SquareMarkerListViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SquareMarkerListViewController.mm; sourceTree = "<group>"; };
 		8E7EDE7A1DA8CC1000C8FBEA /* ARTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7EDE931DA8CC1000C8FBEA /* ARTechTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARTechTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7EDE971DA8CC1000C8FBEA /* ARTechTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARTechTests.m; sourceTree = "<group>"; };
@@ -1440,15 +1460,12 @@
 		8EC297B81EA0B0F20059D514 /* ARBaseViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARBaseViewController.mm; sourceTree = "<group>"; };
 		8EC297B91EA0B0F20059D514 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		8EC297BA1EA0B0F20059D514 /* HomeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HomeViewController.mm; sourceTree = "<group>"; };
-		8EC297BD1EA0B0F20059D514 /* NFTARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFTARViewController.h; sourceTree = "<group>"; };
-		8EC297BE1EA0B0F20059D514 /* NFTARViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NFTARViewController.mm; sourceTree = "<group>"; };
+		8EC297BD1EA0B0F20059D514 /* NFTARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NFTARViewController.h; path = ../NFTARViewController.h; sourceTree = "<group>"; };
+		8EC297BE1EA0B0F20059D514 /* NFTARViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NFTARViewController.mm; path = ../NFTARViewController.mm; sourceTree = "<group>"; };
 		8EC297BF1EA0B0F20059D514 /* SquareARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareARViewController.h; sourceTree = "<group>"; };
 		8EC297C01EA0B0F20059D514 /* SquareARViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SquareARViewController.mm; sourceTree = "<group>"; };
 		8EC297C31EA0B0F20059D514 /* dragon.fbx */ = {isa = PBXFileReference; lastKnownFileType = file; path = dragon.fbx; sourceTree = "<group>"; };
 		8EC297C61EA0B0F20059D514 /* camera_para.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = camera_para.dat; sourceTree = "<group>"; };
-		8EC297C71EA0B0F20059D514 /* hiro.patt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hiro.patt; sourceTree = "<group>"; };
-		8EC297C81EA0B0F20059D514 /* markers.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = markers.dat; sourceTree = "<group>"; };
-		8EC297C91EA0B0F20059D514 /* models.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = models.dat; sourceTree = "<group>"; };
 		8EC297CA1EA0B0F20059D514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EC297CC1EA0B0F20059D514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EC297CE1EA0B0F20059D514 /* ELTextureImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELTextureImp.h; sourceTree = "<group>"; };
@@ -1564,9 +1581,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		64AB82D9AAC10D0423BDE7B3 /* NFT Marker Generate */ = {
+		64AB82D9AAC10D0423BDE7B3 /* NFT Marker */ = {
 			isa = PBXGroup;
 			children = (
+				8EC297BD1EA0B0F20059D514 /* NFTARViewController.h */,
+				8EC297BE1EA0B0F20059D514 /* NFTARViewController.mm */,
 				64AB82E4ECCE9AB651F1E6E7 /* NFTMarkerPreviewViewController.h */,
 				64AB8DFC511873269325DED5 /* NFDetectViewController.h */,
 				64AB835DF414A9A0864A29A3 /* NFTMarkerPreviewViewController.m */,
@@ -1574,6 +1593,7 @@
 				64AB83B181E2D0F663498F05 /* NFTMarkerListViewController.mm */,
 				64AB8E1505B6AE9E2CB1D347 /* NFTMarkerListViewController.h */,
 			);
+			name = "NFT Marker";
 			path = "NFT Marker Generate";
 			sourceTree = "<group>";
 		};
@@ -1593,8 +1613,60 @@
 				64AB890BD124F632E12630B2 /* LocalNFTMarkerManager.h */,
 				64AB8E73D1FA7ED10BCD8D73 /* LocalNFTMarkerData.m */,
 				64AB87AAF26DD21246F8B99C /* LocalNFTMarkerData.h */,
+				8E4B1B251EB9A44C00207B0B /* LocalSquareMarkerManager.h */,
+				8E4B1B261EB9A44C00207B0B /* LocalSquareMarkerManager.m */,
+				8E4B1B281EB9A46900207B0B /* LocalSquareMarkerData.h */,
+				8E4B1B291EB9A46900207B0B /* LocalSquareMarkerData.m */,
 			);
 			path = "Local Marker Manage";
+			sourceTree = "<group>";
+		};
+		8E4B1B131EB9A40E00207B0B /* NFT Markers */ = {
+			isa = PBXGroup;
+			children = (
+				8E4B1B141EB9A40E00207B0B /* 人民币 */,
+			);
+			path = "NFT Markers";
+			sourceTree = "<group>";
+		};
+		8E4B1B141EB9A40E00207B0B /* 人民币 */ = {
+			isa = PBXGroup;
+			children = (
+				8E4B1B151EB9A40E00207B0B /* 人民币.fset */,
+				8E4B1B161EB9A40E00207B0B /* 人民币.fset3 */,
+				8E4B1B171EB9A40E00207B0B /* 人民币.iset */,
+				8E4B1B181EB9A40E00207B0B /* 人民币.jpg */,
+				8E4B1B191EB9A40E00207B0B /* 人民币.nftmarker */,
+			);
+			path = "人民币";
+			sourceTree = "<group>";
+		};
+		8E4B1B1A1EB9A40E00207B0B /* Square Markers */ = {
+			isa = PBXGroup;
+			children = (
+				8E4B1B1B1EB9A40E00207B0B /* hiro */,
+			);
+			path = "Square Markers";
+			sourceTree = "<group>";
+		};
+		8E4B1B1B1EB9A40E00207B0B /* hiro */ = {
+			isa = PBXGroup;
+			children = (
+				8E4B1B1C1EB9A40E00207B0B /* hiro.jpg */,
+				8E4B1B1D1EB9A40E00207B0B /* hiro.sqmarker */,
+			);
+			path = hiro;
+			sourceTree = "<group>";
+		};
+		8E4B1B2B1EB9A58100207B0B /* Square Marker Present */ = {
+			isa = PBXGroup;
+			children = (
+				8EC297BF1EA0B0F20059D514 /* SquareARViewController.h */,
+				8EC297C01EA0B0F20059D514 /* SquareARViewController.mm */,
+				8E4B1B2C1EB9A5BC00207B0B /* SquareMarkerListViewController.h */,
+				8E4B1B2D1EB9A5BC00207B0B /* SquareMarkerListViewController.mm */,
+			);
+			name = "Square Marker Present";
 			sourceTree = "<group>";
 		};
 		8E7EDE711DA8CC1000C8FBEA = {
@@ -2678,15 +2750,12 @@
 		8EC297B61EA0B0F20059D514 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				8E4B1B2B1EB9A58100207B0B /* Square Marker Present */,
+				64AB82D9AAC10D0423BDE7B3 /* NFT Marker */,
 				8EC297B71EA0B0F20059D514 /* ARBaseViewController.h */,
 				8EC297B81EA0B0F20059D514 /* ARBaseViewController.mm */,
 				8EC297B91EA0B0F20059D514 /* HomeViewController.h */,
 				8EC297BA1EA0B0F20059D514 /* HomeViewController.mm */,
-				8EC297BD1EA0B0F20059D514 /* NFTARViewController.h */,
-				8EC297BE1EA0B0F20059D514 /* NFTARViewController.mm */,
-				8EC297BF1EA0B0F20059D514 /* SquareARViewController.h */,
-				8EC297C01EA0B0F20059D514 /* SquareARViewController.mm */,
-				64AB82D9AAC10D0423BDE7B3 /* NFT Marker Generate */,
 				64AB84FD3A4B5FA89F14B9D8 /* ModelSelectViewController.m */,
 				64AB805FB843E54AEAB688E4 /* ModelSelectViewController.h */,
 			);
@@ -2716,10 +2785,9 @@
 		8EC297C51EA0B0F20059D514 /* AR Data */ = {
 			isa = PBXGroup;
 			children = (
+				8E4B1B131EB9A40E00207B0B /* NFT Markers */,
+				8E4B1B1A1EB9A40E00207B0B /* Square Markers */,
 				8EC297C61EA0B0F20059D514 /* camera_para.dat */,
-				8EC297C71EA0B0F20059D514 /* hiro.patt */,
-				8EC297C81EA0B0F20059D514 /* markers.dat */,
-				8EC297C91EA0B0F20059D514 /* models.dat */,
 			);
 			path = "AR Data";
 			sourceTree = "<group>";
@@ -2947,7 +3015,6 @@
 			files = (
 				8EC29A6E1EA0B21D0059D514 /* vtx_in_out.glsl in Resources */,
 				8EC299F01EA0B0F20059D514 /* Viewer in Resources */,
-				8EC29A2B1EA0B0F30059D514 /* markers.dat in Resources */,
 				8EC298F91EA0B0F20059D514 /* Output in Resources */,
 				8EC298EC1EA0B0F20059D514 /* Export in Resources */,
 				8EC298AE1EA0B0F20059D514 /* Vec4s in Resources */,
@@ -2979,6 +3046,7 @@
 				8EC298641EA0B0F20059D514 /* PrimitiveRestartIndex in Resources */,
 				8EC299D21EA0B0F20059D514 /* PositionalStateContainer in Resources */,
 				8EC298B51EA0B0F20059D514 /* Viewport in Resources */,
+				8E4B1B241EB9A40E00207B0B /* hiro.sqmarker in Resources */,
 				8EC299361EA0B0F20059D514 /* ScaleAxisDragger in Resources */,
 				8EC2998E1EA0B0F20059D514 /* ViewDependentShadowMap in Resources */,
 				8EC2982D1EA0B0F20059D514 /* GL in Resources */,
@@ -3106,7 +3174,6 @@
 				8EC299F31EA0B0F20059D514 /* Export in Resources */,
 				8EC298231EA0B0F20059D514 /* Endian in Resources */,
 				8EC299101EA0B0F20059D514 /* Technique in Resources */,
-				8EC29A2A1EA0B0F30059D514 /* hiro.patt in Resources */,
 				8EC299551EA0B0F20059D514 /* FluidProgram in Resources */,
 				8EC299B81EA0B0F20059D514 /* Style in Resources */,
 				8EC298B21EA0B0F20059D514 /* Version in Resources */,
@@ -3256,10 +3323,10 @@
 				8EC298991EA0B0F20059D514 /* Vec2d in Resources */,
 				8EC298AD1EA0B0F20059D514 /* Vec4i in Resources */,
 				8EC297EC1EA0B0F20059D514 /* Barrier in Resources */,
+				8E4B1B211EB9A40E00207B0B /* 人民币.jpg in Resources */,
 				8EC2990F1EA0B0F20059D514 /* SpecularHighlights in Resources */,
 				8EC29A081EA0B0F20059D514 /* ScriptEngine in Resources */,
 				8EC299F21EA0B0F20059D514 /* ViewerEventHandlers in Resources */,
-				8EC29A2C1EA0B0F30059D514 /* models.dat in Resources */,
 				8EC2995A1EA0B0F20059D514 /* ModularProgram in Resources */,
 				8EC298DD1EA0B0F20059D514 /* TimelineAnimationManager in Resources */,
 				8EC299731EA0B0F20059D514 /* CompileSlideCallback in Resources */,
@@ -3301,6 +3368,7 @@
 				8EC298601EA0B0F20059D514 /* PolygonOffset in Resources */,
 				8EC297FE1EA0B0F20059D514 /* AutoTransform in Resources */,
 				8EC299381EA0B0F20059D514 /* TabBoxDragger in Resources */,
+				8E4B1B201EB9A40E00207B0B /* 人民币.iset in Resources */,
 				8EC298291EA0B0F20059D514 /* FrameStamp in Resources */,
 				8EC298CB1EA0B0F20059D514 /* MorphGeometry in Resources */,
 				8EC299971EA0B0F20059D514 /* Impostor in Resources */,
@@ -3323,6 +3391,7 @@
 				8EC29A801EA0B21D0059D514 /* grass_yellow.png in Resources */,
 				8EC2988A1EA0B0F20059D514 /* Texture2DMultisample in Resources */,
 				8EC298E71EA0B0F20059D514 /* DatabasePager in Resources */,
+				8E4B1B221EB9A40E00207B0B /* 人民币.nftmarker in Resources */,
 				8EC299EE1EA0B0F20059D514 /* Version in Resources */,
 				8EC29A0C1EA0B0F20059D514 /* Types in Resources */,
 				8EC299011EA0B0F20059D514 /* SharedStateManager in Resources */,
@@ -3376,6 +3445,7 @@
 				8EC2990E1EA0B0F20059D514 /* Scribe in Resources */,
 				8EC2994D1EA0B0F20059D514 /* DomainOperator in Resources */,
 				8EC298551EA0B0F20059D514 /* observer_ptr in Resources */,
+				8E4B1B1F1EB9A40E00207B0B /* 人民币.fset3 in Resources */,
 				8EC299A21EA0B0F20059D514 /* ScalarsToColors in Resources */,
 				8EC29A0B1EA0B0F20059D514 /* Table in Resources */,
 				8EC298011EA0B0F20059D514 /* BlendEquation in Resources */,
@@ -3432,6 +3502,7 @@
 				8EC299721EA0B0F20059D514 /* AnimationMaterial in Resources */,
 				8EC299F81EA0B0F20059D514 /* RayTracedTechnique in Resources */,
 				8EC298AC1EA0B0F20059D514 /* Vec4f in Resources */,
+				8E4B1B1E1EB9A40E00207B0B /* 人民币.fset in Resources */,
 				8EC29A701EA0B21D0059D514 /* vtx_uniforms.glsl in Resources */,
 				8EC299FE1EA0B0F20059D514 /* Browser in Resources */,
 				8EC2983E1EA0B0F20059D514 /* Light in Resources */,
@@ -3484,6 +3555,7 @@
 				8EC298EB1EA0B0F20059D514 /* DynamicLibrary in Resources */,
 				8EC299431EA0B0F20059D514 /* AngularAccelOperator in Resources */,
 				8EC299411EA0B0F20059D514 /* Version in Resources */,
+				8E4B1B231EB9A40E00207B0B /* hiro.jpg in Resources */,
 				8EC2992B1EA0B0F20059D514 /* AntiSquish in Resources */,
 				8EC2988C1EA0B0F20059D514 /* TextureBuffer in Resources */,
 				8EC2985A1EA0B0F20059D514 /* PagedLOD in Resources */,
@@ -3719,6 +3791,7 @@
 				8EC297E41EA0B0F20059D514 /* ARMarkerSquare.m in Sources */,
 				8EC297E71EA0B0F20059D514 /* ARNFTMarkerDetector.mm in Sources */,
 				8EC29A301EA0B0F30059D514 /* ExampleBaseViewController.m in Sources */,
+				8E4B1B2A1EB9A46900207B0B /* LocalSquareMarkerData.m in Sources */,
 				8EC29A261EA0B0F30059D514 /* SquareARViewController.mm in Sources */,
 				8EC29A251EA0B0F30059D514 /* NFTARViewController.mm in Sources */,
 				8EC29A311EA0B0F30059D514 /* ExampleCollector.m in Sources */,
@@ -3732,8 +3805,10 @@
 				8EC29A2F1EA0B0F30059D514 /* ELTextureImp.mm in Sources */,
 				8EC29A341EA0B0F30059D514 /* UIImage+GL.m in Sources */,
 				8EC29A1F1EA0B0F30059D514 /* trackingSub.c in Sources */,
+				8E4B1B2E1EB9A5BC00207B0B /* SquareMarkerListViewController.mm in Sources */,
 				8EC297DD1EA0B0F20059D514 /* main.m in Sources */,
 				8EC297DB1EA0B0F20059D514 /* AppDelegate.m in Sources */,
+				8E4B1B271EB9A44C00207B0B /* LocalSquareMarkerManager.m in Sources */,
 				64AB87EDFF00AB968F16C379 /* NFTMarkerPreviewViewController.m in Sources */,
 				64AB8CECEE5A43FDBA827C97 /* NFDetectViewController.mm in Sources */,
 				64AB86479C036608D267AB10 /* NFTMarkerListViewController.mm in Sources */,

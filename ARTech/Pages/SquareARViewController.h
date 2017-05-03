@@ -6,5 +6,8 @@
 #import <UIKit/UIKit.h>
 #import "ARBaseViewController.h"
 
+@class LocalSquareMarkerData;
+
 @interface SquareARViewController : ARBaseViewController
+@property (strong, nonatomic) LocalSquareMarkerData *marker;
 @end

@@ -9,6 +9,17 @@
 @implementation LocalNFTMarkerManager
 + (NSArray *)loadNFTMarkers {
     NSMutableArray * localNFTMarkers = [NSMutableArray new];
+    NSArray *paths = [[NSBundle mainBundle] pathsForResourcesOfType:@".nftmarker" inDirectory:@"."];
+    
+    for (NSString * subpath in paths) {
+        if ([subpath hasSuffix:@".nftmarker"]) {
+            NSURL * markerUrl = [NSURL fileURLWithPath:subpath];
+            LocalNFTMarkerData *data = [LocalNFTMarkerData dataWithUrl: markerUrl];
+            data.isInternal = YES;
+            [localNFTMarkers addObject: data];
+        }
+    }
+    
     NSString *docPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
     NSURL *nftSetsDir = [NSURL fileURLWithPathComponents:@[docPath, @"nft_sets"]];
     if ([[NSFileManager defaultManager] fileExistsAtPath:[nftSetsDir path]]) {

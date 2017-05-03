@@ -3,17 +3,17 @@
 // Copyright (c) 2017 wangyang. All rights reserved.
 //
 
-#import "NFTMarkerListViewController.h"
-#import "LocalNFTMarkerManager.h"
-#import "LocalNFTMarkerData.h"
+#import "SquareMarkerListViewController.h"
+#import "LocalSquareMarkerManager.h"
+#import "LocalSquareMarkerData.h"
 
-#import "NFTARViewController.h"
+#import "SquareARViewController.h"
 
-@interface NFTMarkerListViewController ()
+@interface SquareMarkerListViewController ()
 @property (strong, nonatomic) NSArray *markers;
 @end
 
-@implementation NFTMarkerListViewController
+@implementation SquareMarkerListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,7 +23,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.markers = [LocalNFTMarkerManager loadNFTMarkers];
+    self.markers = [LocalSquareMarkerManager loadSquareMarkers];
     [self.tableView reloadData];
 }
 
@@ -34,7 +34,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    LocalNFTMarkerData *data = self.markers[indexPath.row];
+    LocalSquareMarkerData *data = self.markers[indexPath.row];
     UIImage *markerImage = [UIImage imageWithContentsOfFile:[data imageUrl].path];
     cell.imageView.image = markerImage;
     cell.textLabel.text = [data.name stringByAppendingString: data.isInternal ? @"(内置)" : @""];
@@ -47,25 +47,19 @@
 
 #pragma mark - Table View Delegate
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    LocalNFTMarkerData *data = self.markers[indexPath.row];
+    LocalSquareMarkerData *data = self.markers[indexPath.row];
     return !data.isInternal;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        LocalNFTMarkerData *data = self.markers[indexPath.row];
-        [LocalNFTMarkerManager removeMarker:data];
-        self.markers = [LocalNFTMarkerManager loadNFTMarkers];
-        [self.tableView reloadData];
     }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (self.needGotoNFTAR) {
-        NFTARViewController * nftarViewController = [NFTARViewController new];
-        nftarViewController.marker = self.markers[indexPath.row];
-        [self.navigationController pushViewController:nftarViewController animated:YES];
-    }
+    SquareARViewController * nftarViewController = [SquareARViewController new];
+    nftarViewController.marker = self.markers[indexPath.row];
+    [self.navigationController pushViewController:nftarViewController animated:YES];
 }
 
 @end

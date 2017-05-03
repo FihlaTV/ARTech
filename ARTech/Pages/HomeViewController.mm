@@ -72,7 +72,7 @@
 }
 
 - (UIViewController *)gotoSquareMarker {
-    return (UIViewController *)[NSClassFromString(@"SquareARViewController") new];
+    return (UIViewController *)[NSClassFromString(@"SquareMarkerListViewController") new];
 }
 
 - (UIViewController *)gotoNFTMarker {

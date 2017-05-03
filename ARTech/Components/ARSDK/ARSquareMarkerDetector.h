@@ -12,6 +12,7 @@
 #import "ARMarkerDetector.h"
 
 @interface ARSquareMarkerDetector : NSObject <ARMarkerDetector>
+- (instancetype)initWithMarkerFile:(NSString *)markerFilePath;
 - (CGSize)size;
 - (BOOL)detect:(AR2VideoBufferT *)buffer modelMatrix:(float *)modelMatrix;
 - (bool)setupWith:(ARParamLT *)paramLT pixelFormat:(AR_PIXEL_FORMAT)pixelFormat;

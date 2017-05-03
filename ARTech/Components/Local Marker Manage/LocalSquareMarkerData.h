@@ -1,12 +1,14 @@
 //
-// Created by wangyang on 2017/4/14.
-// Copyright (c) 2017 wangyang. All rights reserved.
+//  LocalSquareMarkerData.h
+//  ARTech
+//
+//  Created by wangyang on 2017/5/3.
+//  Copyright © 2017年 wangyang. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-
-@interface LocalNFTMarkerData : NSObject
+@interface LocalSquareMarkerData : NSObject
 @property (strong, nonatomic) NSURL *url;
 @property (strong, nonatomic) NSURL *imageUrl;
 @property (copy, nonatomic) NSString *name;

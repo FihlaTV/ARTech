@@ -25,11 +25,12 @@
     int             gPatt_id;               // Per-marker, but we are using only 1 marker.
     BOOL            useContPoseEstimation;
 }
+@property (strong, nonatomic) NSString *markerFilePath;
 @end
 
 @implementation ARSquareMarkerDetector
 
-- (instancetype)init {
+- (instancetype)initWithMarkerFile:(NSString *)markerFilePath {
     self = [super init];
     if (self) {
         gARHandle = NULL;
@@ -37,6 +38,8 @@
         gCallCountMarkerDetect = 0;
         gAR3DHandle = NULL;
         useContPoseEstimation = FALSE;
+        
+        self.markerFilePath = markerFilePath;
     }
     return self;
 }
@@ -73,9 +76,9 @@
 
     // Load marker(s).
     // Loading only 1 pattern in this example.
-    char *patt_name  = "Data2/hiro.patt";
-    if ((gPatt_id = arPattLoad(gARPattHandle, patt_name)) < 0) {
-        NSLog(@"Error loading pattern file %s.\n", patt_name);
+    NSData *pattData = [NSData dataWithContentsOfFile:self.markerFilePath];
+    if ((gPatt_id = arPattLoadFromBuffer(gARPattHandle, (const char *)pattData.bytes)) < 0) {
+        NSLog(@"Error loading pattern file %s.\n", self.markerFilePath.UTF8String);
         return NO;
     }
 
