@@ -15,6 +15,7 @@
 @interface ARBaseViewController : EZGLBaseViewController
 @property  (strong, nonatomic) ARCameraCapture *cameraCapture;
 @property  (assign, nonatomic) EL2DPlane *videoPlane;
+@property  (assign, nonatomic) std::shared_ptr<ELWorld> world;
 
 - (id<ARMarkerDetector>)preferMarkerDetector;
 - (void)arDidBeganDetect;

@@ -5,6 +5,6 @@
 
 void main()
 {
-    passValueToFragShader();
-    simpleVertexPass();
+    passValueToFragShader(position);
+    simpleVertexPass(position);
 }

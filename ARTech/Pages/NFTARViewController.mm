@@ -22,19 +22,19 @@ enum CollisionTypes {
 };
 
 @interface NFTARViewController () {
-    ELWorld *world;
+    prop_strong(ELWorld, world);
 }
 
 @property  (strong, nonatomic) ARNFTMarkerDetector *markDetector;
 @end
 
 @implementation NFTARViewController
-
+@synthesize world;
 - (void)createMonkey:(ELVector3)position {
     ELFloat width = 17 * 3;
     ELFloat height = 17 * 3;
 
-    ELGameObject *gameObject = new ELGameObject(world);
+    auto gameObject = retain_ptr_init_v(ELGameObject, world);
     world->addNode(gameObject);
     gameObject->transform->position = position;
     gameObject->transform->quaternion = ELQuaternionMakeWithAngleAndAxis(M_PI / 2, 1, 0, 0);
@@ -53,12 +53,12 @@ enum CollisionTypes {
 }
 
 
-ELGameObject * createCubeGameObject(ELWorld *world, ELVector3 size,ELVector3 pos,ELFloat mass,GLuint diffuseMap,GLuint normalMap, bool hasBorder, int collisionGroup, int collisionMask, ELVector3 velocity, bool hasGeometry = false) {
+std::shared_ptr<ELGameObject> createCubeGameObject(std::shared_ptr<ELWorld> world, ELVector3 size,ELVector3 pos,ELFloat mass,GLuint diffuseMap,GLuint normalMap, bool hasBorder, int collisionGroup, int collisionMask, ELVector3 velocity, bool hasGeometry = false) {
     
     diffuseMap = ELTexture::texture(ELAssets::shared()->findFile("stone_ground.png"))->value;
 //    normalMap = ELTexture::texture(ELAssets::shared()->findFile("stone_ground_normal.png"))->value;
     
-    ELGameObject *gameObject = new ELGameObject(world);
+    auto gameObject = retain_ptr_init_v(ELGameObject, world);
     world->addNode(gameObject);
     gameObject->transform->position = pos;
     gameObject->transform->scale = ELVector3Make(1,1,1);
@@ -75,7 +75,7 @@ ELGameObject * createCubeGameObject(ELWorld *world, ELVector3 size,ELVector3 pos
         
     }
     
-    ELCollisionShape *collisionShape = new ELCollisionShape();
+    auto collisionShape = retain_ptr_init(ELCollisionShape);
     collisionShape->asBox(ELVector3Make(size.x / 2, size.y / 2, size.z / 2));
     ELRigidBody *rigidBody = new ELRigidBody(collisionShape, mass);
     rigidBody->collisionGroup = collisionGroup;
@@ -89,7 +89,6 @@ ELGameObject * createCubeGameObject(ELWorld *world, ELVector3 size,ELVector3 pos
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.markDetector = [[ARNFTMarkerDetector alloc] initWithMarkerFile:self.marker.url.path];
-    world = [self world];
     world->physicsWorld->setGravity(ELVector3Make(0,0,-100));
 }
 

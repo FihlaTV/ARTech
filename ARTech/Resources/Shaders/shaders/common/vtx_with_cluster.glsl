@@ -2,10 +2,12 @@
 #include <vtx_uniforms.glsl>
 #include <vtx_in_out.glsl>
 #include <vtx_simple_pass.glsl>
+#include <vtx_cluster.glsl>
 
-void passValueToFragShader(vec4 positionIn) {
+void passValueToFragShader(vec4 positionIn, vec3 normalIn) {
+
     fragTexcoord = texcoord;
-    fragNormal = normal;
+    fragNormal = normalIn;
     fragPosition = positionIn;// + vec4(normalize(fragNormal) * 1, 0.0);
     fragTangent = tangent;
     // TODO: why ???

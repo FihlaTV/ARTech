@@ -1,14 +1,17 @@
 #version 330 core
 
-#include <vtx_base.glsl>
+#include <vtx_with_cluster.glsl>
 #include <vtx_clip_plane.glsl>
 #include <vtx_border_pass.glsl>
 
 void main()
 {
-    passValueToFragShader();
-    clipPlane();
+    vec4 positionOut;
+    vec3 normalOut;
+    processCluster(position, normal, positionOut, normalOut);
+    passValueToFragShader(positionOut, normalOut);
+    clipPlane(positionOut);
 
-    borderVertexPass();
-    simpleVertexPass();
+    borderVertexPass(positionOut);
+    simpleVertexPass(positionOut);
 }

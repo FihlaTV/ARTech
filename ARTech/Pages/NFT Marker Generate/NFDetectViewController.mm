@@ -34,15 +34,6 @@
 @end
 
 @implementation NFDetectViewController
-ELGameObject * createVideoPlane3(ELWorld *world, ELVector2 size, GLuint diffuseMap, GLuint normalMap) {
-    ELGameObject *gameObject = new ELGameObject(world);
-    world->addNode(gameObject);
-    EL2DPlane *plane = new EL2DPlane(size);
-    gameObject->addComponent(plane);
-    plane->materials[0].diffuseMap = diffuseMap;
-    plane->materials[0].normalMap = normalMap;
-    return gameObject;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

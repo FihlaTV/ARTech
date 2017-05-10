@@ -21,6 +21,6 @@
 // override this
 - (NSString *)shaderName;
 - (void)update;
-- (ELWorld *)world;
+- (ELWorld *)getWorld;
 
 @end

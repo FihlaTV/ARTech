@@ -28,6 +28,47 @@
 		8E4B1B271EB9A44C00207B0B /* LocalSquareMarkerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B1B261EB9A44C00207B0B /* LocalSquareMarkerManager.m */; };
 		8E4B1B2A1EB9A46900207B0B /* LocalSquareMarkerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B1B291EB9A46900207B0B /* LocalSquareMarkerData.m */; };
 		8E4B1B2E1EB9A5BC00207B0B /* SquareMarkerListViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B1B2D1EB9A5BC00207B0B /* SquareMarkerListViewController.mm */; };
+		8E6293E41EC1C8F400A2C260 /* cm_depth_pack.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293BA1EC1C8F400A2C260 /* cm_depth_pack.glsl */; };
+		8E6293E51EC1C8F400A2C260 /* cm_uniforms.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293BB1EC1C8F400A2C260 /* cm_uniforms.glsl */; };
+		8E6293E61EC1C8F400A2C260 /* defines.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293BC1EC1C8F400A2C260 /* defines.glsl */; };
+		8E6293E71EC1C8F400A2C260 /* frg_base.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293BD1EC1C8F400A2C260 /* frg_base.glsl */; };
+		8E6293E81EC1C8F400A2C260 /* frg_camera.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293BE1EC1C8F400A2C260 /* frg_camera.glsl */; };
+		8E6293E91EC1C8F400A2C260 /* frg_fog.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293BF1EC1C8F400A2C260 /* frg_fog.glsl */; };
+		8E6293EA1EC1C8F400A2C260 /* frg_light.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293C01EC1C8F400A2C260 /* frg_light.glsl */; };
+		8E6293EB1EC1C8F400A2C260 /* frg_normal.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293C11EC1C8F400A2C260 /* frg_normal.glsl */; };
+		8E6293EC1EC1C8F400A2C260 /* frg_projector.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293C21EC1C8F400A2C260 /* frg_projector.glsl */; };
+		8E6293ED1EC1C8F400A2C260 /* frg_shadow.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293C31EC1C8F400A2C260 /* frg_shadow.glsl */; };
+		8E6293EE1EC1C8F400A2C260 /* frg_terrain.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293C41EC1C8F400A2C260 /* frg_terrain.glsl */; };
+		8E6293EF1EC1C8F400A2C260 /* vtx_base.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293C51EC1C8F400A2C260 /* vtx_base.glsl */; };
+		8E6293F01EC1C8F400A2C260 /* vtx_border_pass.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293C61EC1C8F400A2C260 /* vtx_border_pass.glsl */; };
+		8E6293F11EC1C8F400A2C260 /* vtx_clip_plane.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293C71EC1C8F400A2C260 /* vtx_clip_plane.glsl */; };
+		8E6293F21EC1C8F400A2C260 /* vtx_cluster.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293C81EC1C8F400A2C260 /* vtx_cluster.glsl */; };
+		8E6293F31EC1C8F400A2C260 /* vtx_in_out.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293C91EC1C8F400A2C260 /* vtx_in_out.glsl */; };
+		8E6293F41EC1C8F400A2C260 /* vtx_simple_pass.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293CA1EC1C8F400A2C260 /* vtx_simple_pass.glsl */; };
+		8E6293F51EC1C8F400A2C260 /* vtx_uniforms.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293CB1EC1C8F400A2C260 /* vtx_uniforms.glsl */; };
+		8E6293F61EC1C8F400A2C260 /* vtx_with_cluster.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293CC1EC1C8F400A2C260 /* vtx_with_cluster.glsl */; };
+		8E6293F71EC1C8F400A2C260 /* frg_phong.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293CD1EC1C8F400A2C260 /* frg_phong.glsl */; };
+		8E6293F81EC1C8F400A2C260 /* frg_phong_es.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293CE1EC1C8F400A2C260 /* frg_phong_es.glsl */; };
+		8E6293F91EC1C8F400A2C260 /* frg_shadowmap.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293CF1EC1C8F400A2C260 /* frg_shadowmap.glsl */; };
+		8E6293FA1EC1C8F400A2C260 /* frg_shadowmap_es.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293D01EC1C8F400A2C260 /* frg_shadowmap_es.glsl */; };
+		8E6293FB1EC1C8F400A2C260 /* frg_video_disp.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293D11EC1C8F400A2C260 /* frg_video_disp.glsl */; };
+		8E6293FC1EC1C8F400A2C260 /* vtx_phong.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293D21EC1C8F400A2C260 /* vtx_phong.glsl */; };
+		8E6293FD1EC1C8F400A2C260 /* vtx_phong_es.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293D31EC1C8F400A2C260 /* vtx_phong_es.glsl */; };
+		8E6293FE1EC1C8F400A2C260 /* vtx_video_disp.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293D41EC1C8F400A2C260 /* vtx_video_disp.glsl */; };
+		8E6293FF1EC1C8F400A2C260 /* water.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293D51EC1C8F400A2C260 /* water.glsl */; };
+		8E6294001EC1C8F400A2C260 /* water_es.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293D61EC1C8F400A2C260 /* water_es.glsl */; };
+		8E6294011EC1C8F400A2C260 /* dirt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293D81EC1C8F400A2C260 /* dirt.jpg */; };
+		8E6294021EC1C8F400A2C260 /* dirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293D91EC1C8F400A2C260 /* dirt.png */; };
+		8E6294031EC1C8F400A2C260 /* grass_green.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293DA1EC1C8F400A2C260 /* grass_green.jpeg */; };
+		8E6294041EC1C8F400A2C260 /* grass_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293DB1EC1C8F400A2C260 /* grass_green.png */; };
+		8E6294051EC1C8F400A2C260 /* grass_yellow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293DC1EC1C8F400A2C260 /* grass_yellow.jpg */; };
+		8E6294061EC1C8F400A2C260 /* grass_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293DD1EC1C8F400A2C260 /* grass_yellow.png */; };
+		8E6294071EC1C8F400A2C260 /* island.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293DE1EC1C8F400A2C260 /* island.png */; };
+		8E6294081EC1C8F400A2C260 /* particle_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293DF1EC1C8F400A2C260 /* particle_fire.png */; };
+		8E6294091EC1C8F400A2C260 /* particle_point.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293E01EC1C8F400A2C260 /* particle_point.png */; };
+		8E62940A1EC1C8F400A2C260 /* stone_ground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293E11EC1C8F400A2C260 /* stone_ground.jpeg */; };
+		8E62940B1EC1C8F400A2C260 /* stone_ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293E21EC1C8F400A2C260 /* stone_ground.png */; };
+		8E62940C1EC1C8F400A2C260 /* stone_ground_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6293E31EC1C8F400A2C260 /* stone_ground_normal.png */; };
 		8E7EDE981DA8CC1000C8FBEA /* ARTechTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7EDE971DA8CC1000C8FBEA /* ARTechTests.m */; };
 		8E7EDEA31DA8CC1000C8FBEA /* ARTechUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7EDEA21DA8CC1000C8FBEA /* ARTechUITests.m */; };
 		8E7EE8F31DA8CD9E00C8FBEA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EE8F21DA8CD9E00C8FBEA /* QuartzCore.framework */; };
@@ -639,45 +680,6 @@
 		8EC29A321EA0B0F30059D514 /* EZGLBaseViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EC297D51EA0B0F20059D514 /* EZGLBaseViewController.mm */; };
 		8EC29A331EA0B0F30059D514 /* EZGLMoveJoySticker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC297D71EA0B0F20059D514 /* EZGLMoveJoySticker.m */; };
 		8EC29A341EA0B0F30059D514 /* UIImage+GL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC297DA1EA0B0F20059D514 /* UIImage+GL.m */; };
-		8EC29A601EA0B21D0059D514 /* cm_depth_pack.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A381EA0B21D0059D514 /* cm_depth_pack.glsl */; };
-		8EC29A611EA0B21D0059D514 /* cm_uniforms.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A391EA0B21D0059D514 /* cm_uniforms.glsl */; };
-		8EC29A621EA0B21D0059D514 /* defines.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A3A1EA0B21D0059D514 /* defines.glsl */; };
-		8EC29A631EA0B21D0059D514 /* frg_base.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A3B1EA0B21D0059D514 /* frg_base.glsl */; };
-		8EC29A641EA0B21D0059D514 /* frg_camera.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A3C1EA0B21D0059D514 /* frg_camera.glsl */; };
-		8EC29A651EA0B21D0059D514 /* frg_fog.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A3D1EA0B21D0059D514 /* frg_fog.glsl */; };
-		8EC29A661EA0B21D0059D514 /* frg_light.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A3E1EA0B21D0059D514 /* frg_light.glsl */; };
-		8EC29A671EA0B21D0059D514 /* frg_normal.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A3F1EA0B21D0059D514 /* frg_normal.glsl */; };
-		8EC29A681EA0B21D0059D514 /* frg_projector.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A401EA0B21D0059D514 /* frg_projector.glsl */; };
-		8EC29A691EA0B21D0059D514 /* frg_shadow.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A411EA0B21D0059D514 /* frg_shadow.glsl */; };
-		8EC29A6A1EA0B21D0059D514 /* frg_terrain.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A421EA0B21D0059D514 /* frg_terrain.glsl */; };
-		8EC29A6B1EA0B21D0059D514 /* vtx_base.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A431EA0B21D0059D514 /* vtx_base.glsl */; };
-		8EC29A6C1EA0B21D0059D514 /* vtx_border_pass.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A441EA0B21D0059D514 /* vtx_border_pass.glsl */; };
-		8EC29A6D1EA0B21D0059D514 /* vtx_clip_plane.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A451EA0B21D0059D514 /* vtx_clip_plane.glsl */; };
-		8EC29A6E1EA0B21D0059D514 /* vtx_in_out.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A461EA0B21D0059D514 /* vtx_in_out.glsl */; };
-		8EC29A6F1EA0B21D0059D514 /* vtx_simple_pass.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A471EA0B21D0059D514 /* vtx_simple_pass.glsl */; };
-		8EC29A701EA0B21D0059D514 /* vtx_uniforms.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A481EA0B21D0059D514 /* vtx_uniforms.glsl */; };
-		8EC29A711EA0B21D0059D514 /* frg_phong.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A491EA0B21D0059D514 /* frg_phong.glsl */; };
-		8EC29A721EA0B21D0059D514 /* frg_phong_es.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A4A1EA0B21D0059D514 /* frg_phong_es.glsl */; };
-		8EC29A731EA0B21D0059D514 /* frg_shadowmap.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A4B1EA0B21D0059D514 /* frg_shadowmap.glsl */; };
-		8EC29A741EA0B21D0059D514 /* frg_shadowmap_es.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A4C1EA0B21D0059D514 /* frg_shadowmap_es.glsl */; };
-		8EC29A751EA0B21D0059D514 /* frg_video_disp.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A4D1EA0B21D0059D514 /* frg_video_disp.glsl */; };
-		8EC29A761EA0B21D0059D514 /* vtx_phong.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A4E1EA0B21D0059D514 /* vtx_phong.glsl */; };
-		8EC29A771EA0B21D0059D514 /* vtx_phong_es.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A4F1EA0B21D0059D514 /* vtx_phong_es.glsl */; };
-		8EC29A781EA0B21D0059D514 /* vtx_video_disp.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A501EA0B21D0059D514 /* vtx_video_disp.glsl */; };
-		8EC29A791EA0B21D0059D514 /* water.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A511EA0B21D0059D514 /* water.glsl */; };
-		8EC29A7A1EA0B21D0059D514 /* water_es.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A521EA0B21D0059D514 /* water_es.glsl */; };
-		8EC29A7B1EA0B21D0059D514 /* dirt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A541EA0B21D0059D514 /* dirt.jpg */; };
-		8EC29A7C1EA0B21D0059D514 /* dirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A551EA0B21D0059D514 /* dirt.png */; };
-		8EC29A7D1EA0B21D0059D514 /* grass_green.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A561EA0B21D0059D514 /* grass_green.jpeg */; };
-		8EC29A7E1EA0B21D0059D514 /* grass_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A571EA0B21D0059D514 /* grass_green.png */; };
-		8EC29A7F1EA0B21D0059D514 /* grass_yellow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A581EA0B21D0059D514 /* grass_yellow.jpg */; };
-		8EC29A801EA0B21D0059D514 /* grass_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A591EA0B21D0059D514 /* grass_yellow.png */; };
-		8EC29A811EA0B21D0059D514 /* island.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A5A1EA0B21D0059D514 /* island.png */; };
-		8EC29A821EA0B21D0059D514 /* particle_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A5B1EA0B21D0059D514 /* particle_fire.png */; };
-		8EC29A831EA0B21D0059D514 /* particle_point.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A5C1EA0B21D0059D514 /* particle_point.png */; };
-		8EC29A841EA0B21D0059D514 /* stone_ground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A5D1EA0B21D0059D514 /* stone_ground.jpeg */; };
-		8EC29A851EA0B21D0059D514 /* stone_ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A5E1EA0B21D0059D514 /* stone_ground.png */; };
-		8EC29A861EA0B21D0059D514 /* stone_ground_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29A5F1EA0B21D0059D514 /* stone_ground_normal.png */; };
 		8EC29A881EA0B6200059D514 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC29A871EA0B6200059D514 /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
@@ -731,6 +733,47 @@
 		8E4B1B291EB9A46900207B0B /* LocalSquareMarkerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalSquareMarkerData.m; sourceTree = "<group>"; };
 		8E4B1B2C1EB9A5BC00207B0B /* SquareMarkerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareMarkerListViewController.h; sourceTree = "<group>"; };
 		8E4B1B2D1EB9A5BC00207B0B /* SquareMarkerListViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SquareMarkerListViewController.mm; sourceTree = "<group>"; };
+		8E6293BA1EC1C8F400A2C260 /* cm_depth_pack.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cm_depth_pack.glsl; sourceTree = "<group>"; };
+		8E6293BB1EC1C8F400A2C260 /* cm_uniforms.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cm_uniforms.glsl; sourceTree = "<group>"; };
+		8E6293BC1EC1C8F400A2C260 /* defines.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = defines.glsl; sourceTree = "<group>"; };
+		8E6293BD1EC1C8F400A2C260 /* frg_base.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_base.glsl; sourceTree = "<group>"; };
+		8E6293BE1EC1C8F400A2C260 /* frg_camera.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_camera.glsl; sourceTree = "<group>"; };
+		8E6293BF1EC1C8F400A2C260 /* frg_fog.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_fog.glsl; sourceTree = "<group>"; };
+		8E6293C01EC1C8F400A2C260 /* frg_light.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_light.glsl; sourceTree = "<group>"; };
+		8E6293C11EC1C8F400A2C260 /* frg_normal.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_normal.glsl; sourceTree = "<group>"; };
+		8E6293C21EC1C8F400A2C260 /* frg_projector.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_projector.glsl; sourceTree = "<group>"; };
+		8E6293C31EC1C8F400A2C260 /* frg_shadow.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_shadow.glsl; sourceTree = "<group>"; };
+		8E6293C41EC1C8F400A2C260 /* frg_terrain.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_terrain.glsl; sourceTree = "<group>"; };
+		8E6293C51EC1C8F400A2C260 /* vtx_base.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_base.glsl; sourceTree = "<group>"; };
+		8E6293C61EC1C8F400A2C260 /* vtx_border_pass.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_border_pass.glsl; sourceTree = "<group>"; };
+		8E6293C71EC1C8F400A2C260 /* vtx_clip_plane.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_clip_plane.glsl; sourceTree = "<group>"; };
+		8E6293C81EC1C8F400A2C260 /* vtx_cluster.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_cluster.glsl; sourceTree = "<group>"; };
+		8E6293C91EC1C8F400A2C260 /* vtx_in_out.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_in_out.glsl; sourceTree = "<group>"; };
+		8E6293CA1EC1C8F400A2C260 /* vtx_simple_pass.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_simple_pass.glsl; sourceTree = "<group>"; };
+		8E6293CB1EC1C8F400A2C260 /* vtx_uniforms.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_uniforms.glsl; sourceTree = "<group>"; };
+		8E6293CC1EC1C8F400A2C260 /* vtx_with_cluster.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_with_cluster.glsl; sourceTree = "<group>"; };
+		8E6293CD1EC1C8F400A2C260 /* frg_phong.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_phong.glsl; sourceTree = "<group>"; };
+		8E6293CE1EC1C8F400A2C260 /* frg_phong_es.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_phong_es.glsl; sourceTree = "<group>"; };
+		8E6293CF1EC1C8F400A2C260 /* frg_shadowmap.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_shadowmap.glsl; sourceTree = "<group>"; };
+		8E6293D01EC1C8F400A2C260 /* frg_shadowmap_es.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_shadowmap_es.glsl; sourceTree = "<group>"; };
+		8E6293D11EC1C8F400A2C260 /* frg_video_disp.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_video_disp.glsl; sourceTree = "<group>"; };
+		8E6293D21EC1C8F400A2C260 /* vtx_phong.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_phong.glsl; sourceTree = "<group>"; };
+		8E6293D31EC1C8F400A2C260 /* vtx_phong_es.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_phong_es.glsl; sourceTree = "<group>"; };
+		8E6293D41EC1C8F400A2C260 /* vtx_video_disp.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_video_disp.glsl; sourceTree = "<group>"; };
+		8E6293D51EC1C8F400A2C260 /* water.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = water.glsl; sourceTree = "<group>"; };
+		8E6293D61EC1C8F400A2C260 /* water_es.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = water_es.glsl; sourceTree = "<group>"; };
+		8E6293D81EC1C8F400A2C260 /* dirt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dirt.jpg; sourceTree = "<group>"; };
+		8E6293D91EC1C8F400A2C260 /* dirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dirt.png; sourceTree = "<group>"; };
+		8E6293DA1EC1C8F400A2C260 /* grass_green.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grass_green.jpeg; sourceTree = "<group>"; };
+		8E6293DB1EC1C8F400A2C260 /* grass_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass_green.png; sourceTree = "<group>"; };
+		8E6293DC1EC1C8F400A2C260 /* grass_yellow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grass_yellow.jpg; sourceTree = "<group>"; };
+		8E6293DD1EC1C8F400A2C260 /* grass_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass_yellow.png; sourceTree = "<group>"; };
+		8E6293DE1EC1C8F400A2C260 /* island.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = island.png; sourceTree = "<group>"; };
+		8E6293DF1EC1C8F400A2C260 /* particle_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle_fire.png; sourceTree = "<group>"; };
+		8E6293E01EC1C8F400A2C260 /* particle_point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle_point.png; sourceTree = "<group>"; };
+		8E6293E11EC1C8F400A2C260 /* stone_ground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stone_ground.jpeg; sourceTree = "<group>"; };
+		8E6293E21EC1C8F400A2C260 /* stone_ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stone_ground.png; sourceTree = "<group>"; };
+		8E6293E31EC1C8F400A2C260 /* stone_ground_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stone_ground_normal.png; sourceTree = "<group>"; };
 		8E7EDE7A1DA8CC1000C8FBEA /* ARTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7EDE931DA8CC1000C8FBEA /* ARTechTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARTechTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7EDE971DA8CC1000C8FBEA /* ARTechTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARTechTests.m; sourceTree = "<group>"; };
@@ -1481,45 +1524,6 @@
 		8EC297D81EA0B0F20059D514 /* EZGLMoveJoyStickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZGLMoveJoyStickerDelegate.h; sourceTree = "<group>"; };
 		8EC297D91EA0B0F20059D514 /* UIImage+GL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GL.h"; sourceTree = "<group>"; };
 		8EC297DA1EA0B0F20059D514 /* UIImage+GL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GL.m"; sourceTree = "<group>"; };
-		8EC29A381EA0B21D0059D514 /* cm_depth_pack.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cm_depth_pack.glsl; sourceTree = "<group>"; };
-		8EC29A391EA0B21D0059D514 /* cm_uniforms.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cm_uniforms.glsl; sourceTree = "<group>"; };
-		8EC29A3A1EA0B21D0059D514 /* defines.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = defines.glsl; sourceTree = "<group>"; };
-		8EC29A3B1EA0B21D0059D514 /* frg_base.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_base.glsl; sourceTree = "<group>"; };
-		8EC29A3C1EA0B21D0059D514 /* frg_camera.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_camera.glsl; sourceTree = "<group>"; };
-		8EC29A3D1EA0B21D0059D514 /* frg_fog.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_fog.glsl; sourceTree = "<group>"; };
-		8EC29A3E1EA0B21D0059D514 /* frg_light.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_light.glsl; sourceTree = "<group>"; };
-		8EC29A3F1EA0B21D0059D514 /* frg_normal.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_normal.glsl; sourceTree = "<group>"; };
-		8EC29A401EA0B21D0059D514 /* frg_projector.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_projector.glsl; sourceTree = "<group>"; };
-		8EC29A411EA0B21D0059D514 /* frg_shadow.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_shadow.glsl; sourceTree = "<group>"; };
-		8EC29A421EA0B21D0059D514 /* frg_terrain.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_terrain.glsl; sourceTree = "<group>"; };
-		8EC29A431EA0B21D0059D514 /* vtx_base.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_base.glsl; sourceTree = "<group>"; };
-		8EC29A441EA0B21D0059D514 /* vtx_border_pass.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_border_pass.glsl; sourceTree = "<group>"; };
-		8EC29A451EA0B21D0059D514 /* vtx_clip_plane.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_clip_plane.glsl; sourceTree = "<group>"; };
-		8EC29A461EA0B21D0059D514 /* vtx_in_out.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_in_out.glsl; sourceTree = "<group>"; };
-		8EC29A471EA0B21D0059D514 /* vtx_simple_pass.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_simple_pass.glsl; sourceTree = "<group>"; };
-		8EC29A481EA0B21D0059D514 /* vtx_uniforms.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_uniforms.glsl; sourceTree = "<group>"; };
-		8EC29A491EA0B21D0059D514 /* frg_phong.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_phong.glsl; sourceTree = "<group>"; };
-		8EC29A4A1EA0B21D0059D514 /* frg_phong_es.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_phong_es.glsl; sourceTree = "<group>"; };
-		8EC29A4B1EA0B21D0059D514 /* frg_shadowmap.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_shadowmap.glsl; sourceTree = "<group>"; };
-		8EC29A4C1EA0B21D0059D514 /* frg_shadowmap_es.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_shadowmap_es.glsl; sourceTree = "<group>"; };
-		8EC29A4D1EA0B21D0059D514 /* frg_video_disp.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frg_video_disp.glsl; sourceTree = "<group>"; };
-		8EC29A4E1EA0B21D0059D514 /* vtx_phong.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_phong.glsl; sourceTree = "<group>"; };
-		8EC29A4F1EA0B21D0059D514 /* vtx_phong_es.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_phong_es.glsl; sourceTree = "<group>"; };
-		8EC29A501EA0B21D0059D514 /* vtx_video_disp.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vtx_video_disp.glsl; sourceTree = "<group>"; };
-		8EC29A511EA0B21D0059D514 /* water.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = water.glsl; sourceTree = "<group>"; };
-		8EC29A521EA0B21D0059D514 /* water_es.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = water_es.glsl; sourceTree = "<group>"; };
-		8EC29A541EA0B21D0059D514 /* dirt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dirt.jpg; sourceTree = "<group>"; };
-		8EC29A551EA0B21D0059D514 /* dirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dirt.png; sourceTree = "<group>"; };
-		8EC29A561EA0B21D0059D514 /* grass_green.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grass_green.jpeg; sourceTree = "<group>"; };
-		8EC29A571EA0B21D0059D514 /* grass_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass_green.png; sourceTree = "<group>"; };
-		8EC29A581EA0B21D0059D514 /* grass_yellow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grass_yellow.jpg; sourceTree = "<group>"; };
-		8EC29A591EA0B21D0059D514 /* grass_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass_yellow.png; sourceTree = "<group>"; };
-		8EC29A5A1EA0B21D0059D514 /* island.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = island.png; sourceTree = "<group>"; };
-		8EC29A5B1EA0B21D0059D514 /* particle_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle_fire.png; sourceTree = "<group>"; };
-		8EC29A5C1EA0B21D0059D514 /* particle_point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle_point.png; sourceTree = "<group>"; };
-		8EC29A5D1EA0B21D0059D514 /* stone_ground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stone_ground.jpeg; sourceTree = "<group>"; };
-		8EC29A5E1EA0B21D0059D514 /* stone_ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stone_ground.png; sourceTree = "<group>"; };
-		8EC29A5F1EA0B21D0059D514 /* stone_ground_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stone_ground_normal.png; sourceTree = "<group>"; };
 		8EC29A871EA0B6200059D514 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		98014668A11946243F7CCEB1 /* libPods-ARTechTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ARTechTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69C7FD6978115AC86C81462 /* Pods-ARTechTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTechTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARTechTests/Pods-ARTechTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1667,6 +1671,69 @@
 				8E4B1B2D1EB9A5BC00207B0B /* SquareMarkerListViewController.mm */,
 			);
 			name = "Square Marker Present";
+			sourceTree = "<group>";
+		};
+		8E6293B81EC1C8F400A2C260 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				8E6293B91EC1C8F400A2C260 /* common */,
+				8E6293CD1EC1C8F400A2C260 /* frg_phong.glsl */,
+				8E6293CE1EC1C8F400A2C260 /* frg_phong_es.glsl */,
+				8E6293CF1EC1C8F400A2C260 /* frg_shadowmap.glsl */,
+				8E6293D01EC1C8F400A2C260 /* frg_shadowmap_es.glsl */,
+				8E6293D11EC1C8F400A2C260 /* frg_video_disp.glsl */,
+				8E6293D21EC1C8F400A2C260 /* vtx_phong.glsl */,
+				8E6293D31EC1C8F400A2C260 /* vtx_phong_es.glsl */,
+				8E6293D41EC1C8F400A2C260 /* vtx_video_disp.glsl */,
+				8E6293D51EC1C8F400A2C260 /* water.glsl */,
+				8E6293D61EC1C8F400A2C260 /* water_es.glsl */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
+		8E6293B91EC1C8F400A2C260 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				8E6293BA1EC1C8F400A2C260 /* cm_depth_pack.glsl */,
+				8E6293BB1EC1C8F400A2C260 /* cm_uniforms.glsl */,
+				8E6293BC1EC1C8F400A2C260 /* defines.glsl */,
+				8E6293BD1EC1C8F400A2C260 /* frg_base.glsl */,
+				8E6293BE1EC1C8F400A2C260 /* frg_camera.glsl */,
+				8E6293BF1EC1C8F400A2C260 /* frg_fog.glsl */,
+				8E6293C01EC1C8F400A2C260 /* frg_light.glsl */,
+				8E6293C11EC1C8F400A2C260 /* frg_normal.glsl */,
+				8E6293C21EC1C8F400A2C260 /* frg_projector.glsl */,
+				8E6293C31EC1C8F400A2C260 /* frg_shadow.glsl */,
+				8E6293C41EC1C8F400A2C260 /* frg_terrain.glsl */,
+				8E6293C51EC1C8F400A2C260 /* vtx_base.glsl */,
+				8E6293C61EC1C8F400A2C260 /* vtx_border_pass.glsl */,
+				8E6293C71EC1C8F400A2C260 /* vtx_clip_plane.glsl */,
+				8E6293C81EC1C8F400A2C260 /* vtx_cluster.glsl */,
+				8E6293C91EC1C8F400A2C260 /* vtx_in_out.glsl */,
+				8E6293CA1EC1C8F400A2C260 /* vtx_simple_pass.glsl */,
+				8E6293CB1EC1C8F400A2C260 /* vtx_uniforms.glsl */,
+				8E6293CC1EC1C8F400A2C260 /* vtx_with_cluster.glsl */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		8E6293D71EC1C8F400A2C260 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				8E6293D81EC1C8F400A2C260 /* dirt.jpg */,
+				8E6293D91EC1C8F400A2C260 /* dirt.png */,
+				8E6293DA1EC1C8F400A2C260 /* grass_green.jpeg */,
+				8E6293DB1EC1C8F400A2C260 /* grass_green.png */,
+				8E6293DC1EC1C8F400A2C260 /* grass_yellow.jpg */,
+				8E6293DD1EC1C8F400A2C260 /* grass_yellow.png */,
+				8E6293DE1EC1C8F400A2C260 /* island.png */,
+				8E6293DF1EC1C8F400A2C260 /* particle_fire.png */,
+				8E6293E01EC1C8F400A2C260 /* particle_point.png */,
+				8E6293E11EC1C8F400A2C260 /* stone_ground.jpeg */,
+				8E6293E21EC1C8F400A2C260 /* stone_ground.png */,
+				8E6293E31EC1C8F400A2C260 /* stone_ground_normal.png */,
+			);
+			path = textures;
 			sourceTree = "<group>";
 		};
 		8E7EDE711DA8CC1000C8FBEA = {
@@ -2815,71 +2882,10 @@
 		8EC29A351EA0B21D0059D514 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				8EC29A361EA0B21D0059D514 /* shaders */,
-				8EC29A531EA0B21D0059D514 /* textures */,
+				8E6293B81EC1C8F400A2C260 /* shaders */,
+				8E6293D71EC1C8F400A2C260 /* textures */,
 			);
 			path = Shaders;
-			sourceTree = "<group>";
-		};
-		8EC29A361EA0B21D0059D514 /* shaders */ = {
-			isa = PBXGroup;
-			children = (
-				8EC29A371EA0B21D0059D514 /* common */,
-				8EC29A491EA0B21D0059D514 /* frg_phong.glsl */,
-				8EC29A4A1EA0B21D0059D514 /* frg_phong_es.glsl */,
-				8EC29A4B1EA0B21D0059D514 /* frg_shadowmap.glsl */,
-				8EC29A4C1EA0B21D0059D514 /* frg_shadowmap_es.glsl */,
-				8EC29A4D1EA0B21D0059D514 /* frg_video_disp.glsl */,
-				8EC29A4E1EA0B21D0059D514 /* vtx_phong.glsl */,
-				8EC29A4F1EA0B21D0059D514 /* vtx_phong_es.glsl */,
-				8EC29A501EA0B21D0059D514 /* vtx_video_disp.glsl */,
-				8EC29A511EA0B21D0059D514 /* water.glsl */,
-				8EC29A521EA0B21D0059D514 /* water_es.glsl */,
-			);
-			path = shaders;
-			sourceTree = "<group>";
-		};
-		8EC29A371EA0B21D0059D514 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				8EC29A381EA0B21D0059D514 /* cm_depth_pack.glsl */,
-				8EC29A391EA0B21D0059D514 /* cm_uniforms.glsl */,
-				8EC29A3A1EA0B21D0059D514 /* defines.glsl */,
-				8EC29A3B1EA0B21D0059D514 /* frg_base.glsl */,
-				8EC29A3C1EA0B21D0059D514 /* frg_camera.glsl */,
-				8EC29A3D1EA0B21D0059D514 /* frg_fog.glsl */,
-				8EC29A3E1EA0B21D0059D514 /* frg_light.glsl */,
-				8EC29A3F1EA0B21D0059D514 /* frg_normal.glsl */,
-				8EC29A401EA0B21D0059D514 /* frg_projector.glsl */,
-				8EC29A411EA0B21D0059D514 /* frg_shadow.glsl */,
-				8EC29A421EA0B21D0059D514 /* frg_terrain.glsl */,
-				8EC29A431EA0B21D0059D514 /* vtx_base.glsl */,
-				8EC29A441EA0B21D0059D514 /* vtx_border_pass.glsl */,
-				8EC29A451EA0B21D0059D514 /* vtx_clip_plane.glsl */,
-				8EC29A461EA0B21D0059D514 /* vtx_in_out.glsl */,
-				8EC29A471EA0B21D0059D514 /* vtx_simple_pass.glsl */,
-				8EC29A481EA0B21D0059D514 /* vtx_uniforms.glsl */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
-		8EC29A531EA0B21D0059D514 /* textures */ = {
-			isa = PBXGroup;
-			children = (
-				8EC29A541EA0B21D0059D514 /* dirt.jpg */,
-				8EC29A551EA0B21D0059D514 /* dirt.png */,
-				8EC29A561EA0B21D0059D514 /* grass_green.jpeg */,
-				8EC29A571EA0B21D0059D514 /* grass_green.png */,
-				8EC29A581EA0B21D0059D514 /* grass_yellow.jpg */,
-				8EC29A591EA0B21D0059D514 /* grass_yellow.png */,
-				8EC29A5A1EA0B21D0059D514 /* island.png */,
-				8EC29A5B1EA0B21D0059D514 /* particle_fire.png */,
-				8EC29A5C1EA0B21D0059D514 /* particle_point.png */,
-				8EC29A5D1EA0B21D0059D514 /* stone_ground.jpeg */,
-				8EC29A5E1EA0B21D0059D514 /* stone_ground.png */,
-				8EC29A5F1EA0B21D0059D514 /* stone_ground_normal.png */,
-			);
-			path = textures;
 			sourceTree = "<group>";
 		};
 		C629CEA54331036E9CB84304 /* Pods */ = {
@@ -3013,7 +3019,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EC29A6E1EA0B21D0059D514 /* vtx_in_out.glsl in Resources */,
 				8EC299F01EA0B0F20059D514 /* Viewer in Resources */,
 				8EC298F91EA0B0F20059D514 /* Output in Resources */,
 				8EC298EC1EA0B0F20059D514 /* Export in Resources */,
@@ -3030,7 +3035,6 @@
 				8EC298FC1EA0B0F20059D514 /* PluginQuery in Resources */,
 				8EC298021EA0B0F20059D514 /* BlendFunc in Resources */,
 				8EC297EA1EA0B0F20059D514 /* config.h.in in Resources */,
-				8EC29A6A1EA0B21D0059D514 /* frg_terrain.glsl in Resources */,
 				8EC299E91EA0B0F20059D514 /* Export in Resources */,
 				8EC299541EA0B0F20059D514 /* FluidFrictionOperator in Resources */,
 				8EC299711EA0B0F20059D514 /* Version in Resources */,
@@ -3038,8 +3042,8 @@
 				8EC299871EA0B0F20059D514 /* ShadowSettings in Resources */,
 				8EC298D41EA0B0F20059D514 /* StackedRotateAxisElement in Resources */,
 				8EC299501EA0B0F20059D514 /* ExplosionEffect in Resources */,
-				8EC29A7D1EA0B21D0059D514 /* grass_green.jpeg in Resources */,
 				8EC298811EA0B0F20059D514 /* TexEnvCombine in Resources */,
+				8E6293EA1EC1C8F400A2C260 /* frg_light.glsl in Resources */,
 				8EC2991A1EA0B0F20059D514 /* Export in Resources */,
 				8EC298891EA0B0F20059D514 /* Texture2DArray in Resources */,
 				8EC299251EA0B0F20059D514 /* StandardManipulator in Resources */,
@@ -3047,18 +3051,22 @@
 				8EC299D21EA0B0F20059D514 /* PositionalStateContainer in Resources */,
 				8EC298B51EA0B0F20059D514 /* Viewport in Resources */,
 				8E4B1B241EB9A40E00207B0B /* hiro.sqmarker in Resources */,
+				8E6293F71EC1C8F400A2C260 /* frg_phong.glsl in Resources */,
 				8EC299361EA0B0F20059D514 /* ScaleAxisDragger in Resources */,
 				8EC2998E1EA0B0F20059D514 /* ViewDependentShadowMap in Resources */,
 				8EC2982D1EA0B0F20059D514 /* GL in Resources */,
 				8EC29A031EA0B0F20059D514 /* Input in Resources */,
+				8E6293F11EC1C8F400A2C260 /* vtx_clip_plane.glsl in Resources */,
 				8EC298D61EA0B0F20059D514 /* StackedTransform in Resources */,
 				8EC299641EA0B0F20059D514 /* PointPlacer in Resources */,
 				8EC298E21EA0B0F20059D514 /* VertexInfluence in Resources */,
+				8E6294031EC1C8F400A2C260 /* grass_green.jpeg in Resources */,
 				8EC297F41EA0B0F20059D514 /* ScopedLock in Resources */,
 				8EC2990D1EA0B0F20059D514 /* Registry in Resources */,
 				8EC298C31EA0B0F20059D514 /* Channel in Resources */,
 				8EC298521EA0B0F20059D514 /* Notify in Resources */,
 				8EC2982F1EA0B0F20059D514 /* GLBeginEndAdapter in Resources */,
+				8E6294021EC1C8F400A2C260 /* dirt.png in Resources */,
 				8EC299841EA0B0F20059D514 /* ProjectionShadowMap in Resources */,
 				8EC2996E1EA0B0F20059D514 /* SmokeEffect in Resources */,
 				8EC298751EA0B0F20059D514 /* Shape in Resources */,
@@ -3068,13 +3076,14 @@
 				8EC298611EA0B0F20059D514 /* PolygonStipple in Resources */,
 				8EC2994E1EA0B0F20059D514 /* Emitter in Resources */,
 				8EC299461EA0B0F20059D514 /* BoxPlacer in Resources */,
-				8EC29A711EA0B21D0059D514 /* frg_phong.glsl in Resources */,
+				8E6293EE1EC1C8F400A2C260 /* frg_terrain.glsl in Resources */,
 				8EC29A051EA0B0F20059D514 /* Lua in Resources */,
 				8EC2989A1EA0B0F20059D514 /* Vec2f in Resources */,
 				8EC297DC1EA0B0F20059D514 /* Info.plist in Resources */,
 				8EC299991EA0B0F20059D514 /* InsertImpostorsVisitor in Resources */,
 				8EC298181EA0B0F20059D514 /* CoordinateSystemNode in Resources */,
 				8EC29A2D1EA0B0F30059D514 /* Assets.xcassets in Resources */,
+				8E6293E61EC1C8F400A2C260 /* defines.glsl in Resources */,
 				8EC2985E1EA0B0F20059D514 /* PointSprite in Resources */,
 				8EC299CA1EA0B0F20059D514 /* IntersectVisitor in Resources */,
 				8EC299C41EA0B0F20059D514 /* Export in Resources */,
@@ -3084,11 +3093,11 @@
 				8EC29A071EA0B0F20059D514 /* Python in Resources */,
 				8EC299DB1EA0B0F20059D514 /* ShaderGen in Resources */,
 				8EC298C61EA0B0F20059D514 /* Export in Resources */,
-				8EC29A621EA0B21D0059D514 /* defines.glsl in Resources */,
 				8EC298401EA0B0F20059D514 /* LightSource in Resources */,
 				8EC299E41EA0B0F20059D514 /* TriStripVisitor in Resources */,
 				8EC299621EA0B0F20059D514 /* ParticleSystemUpdater in Resources */,
 				8EC2988F1EA0B0F20059D514 /* Timer in Resources */,
+				8E6293F21EC1C8F400A2C260 /* vtx_cluster.glsl in Resources */,
 				8EC2986F1EA0B0F20059D514 /* Sequence in Resources */,
 				8EC298761EA0B0F20059D514 /* ShapeDrawable in Resources */,
 				8EC299ED1EA0B0F20059D514 /* Scene in Resources */,
@@ -3111,26 +3120,25 @@
 				8EC298EA1EA0B0F20059D514 /* DotOsgWrapper in Resources */,
 				8EC298FD1EA0B0F20059D514 /* ReaderWriter in Resources */,
 				8EC298371EA0B0F20059D514 /* Hint in Resources */,
-				8EC29A831EA0B21D0059D514 /* particle_point.png in Resources */,
 				8EC2994A1EA0B0F20059D514 /* ConstantRateCounter in Resources */,
 				8EC299E11EA0B0F20059D514 /* Tessellator in Resources */,
 				8EC2999D1EA0B0F20059D514 /* LineOfSight in Resources */,
-				8EC29A861EA0B21D0059D514 /* stone_ground_normal.png in Resources */,
 				8EC29A021EA0B0F20059D514 /* Frame in Resources */,
 				8EC298161EA0B0F20059D514 /* ConvexPlanarOccluder in Resources */,
 				8EC299C11EA0B0F20059D514 /* DisplayRequirementsVisitor in Resources */,
 				8EC2995B1EA0B0F20059D514 /* MultiSegmentPlacer in Resources */,
 				8EC298DC1EA0B0F20059D514 /* Timeline in Resources */,
 				8EC298131EA0B0F20059D514 /* ColorMatrix in Resources */,
+				8E6293EC1EC1C8F400A2C260 /* frg_projector.glsl in Resources */,
 				8EC298671EA0B0F20059D514 /* Projection in Resources */,
 				8EC298A11EA0B0F20059D514 /* Vec3b in Resources */,
 				8EC297FC1EA0B0F20059D514 /* ArrayDispatchers in Resources */,
 				8EC298491EA0B0F20059D514 /* Matrixd in Resources */,
 				8EC2996C1EA0B0F20059D514 /* Shooter in Resources */,
+				8E6294051EC1C8F400A2C260 /* grass_yellow.jpg in Resources */,
 				8EC299B31EA0B0F20059D514 /* Font in Resources */,
 				8EC299FA1EA0B0F20059D514 /* Volume in Resources */,
 				8EC2991B1EA0B0F20059D514 /* FirstPersonManipulator in Resources */,
-				8EC29A721EA0B21D0059D514 /* frg_phong_es.glsl in Resources */,
 				8EC299D81EA0B0F20059D514 /* ReversePrimitiveFunctor in Resources */,
 				8EC298801EA0B0F20059D514 /* TexEnv in Resources */,
 				8EC2981A1EA0B0F20059D514 /* CullFace in Resources */,
@@ -3144,15 +3152,13 @@
 				8EC29A001EA0B0F20059D514 /* EventInterface in Resources */,
 				8EC299521EA0B0F20059D514 /* Export in Resources */,
 				8EC298061EA0B0F20059D514 /* buffered_value in Resources */,
-				8EC29A7C1EA0B21D0059D514 /* dirt.png in Resources */,
+				8E6293F91EC1C8F400A2C260 /* frg_shadowmap.glsl in Resources */,
 				8EC298051EA0B0F20059D514 /* BoundsChecking in Resources */,
 				8EC2990A1EA0B0F20059D514 /* Export in Resources */,
 				8EC299A11EA0B0F20059D514 /* ScalarBar in Resources */,
-				8EC29A741EA0B21D0059D514 /* frg_shadowmap_es.glsl in Resources */,
-				8EC29A821EA0B21D0059D514 /* particle_fire.png in Resources */,
-				8EC29A691EA0B21D0059D514 /* frg_shadow.glsl in Resources */,
 				8EC299E71EA0B0F20059D514 /* GraphicsWindowIOS in Resources */,
 				8EC2992F1EA0B0F20059D514 /* Dragger in Resources */,
+				8E6293E91EC1C8F400A2C260 /* frg_fog.glsl in Resources */,
 				8EC298701EA0B0F20059D514 /* ShadeModel in Resources */,
 				8EC298EF1EA0B0F20059D514 /* FileNameUtils in Resources */,
 				8EC298911EA0B0F20059D514 /* Transform in Resources */,
@@ -3161,16 +3167,18 @@
 				8EC299791EA0B0F20059D514 /* SlideShowConstructor in Resources */,
 				8EC298941EA0B0F20059D514 /* Uniform in Resources */,
 				8EC298841EA0B0F20059D514 /* TexGenNode in Resources */,
+				8E6293E71EC1C8F400A2C260 /* frg_base.glsl in Resources */,
 				8EC2991C1EA0B0F20059D514 /* FlightManipulator in Resources */,
 				8EC298E91EA0B0F20059D514 /* DataTypes in Resources */,
 				8EC2991E1EA0B0F20059D514 /* GUIEventAdapter in Resources */,
 				8EC2998A1EA0B0F20059D514 /* ShadowVolume in Resources */,
 				8EC2997D1EA0B0F20059D514 /* Export in Resources */,
-				8EC29A7F1EA0B21D0059D514 /* grass_yellow.jpg in Resources */,
 				8EC2998C1EA0B0F20059D514 /* StandardShadowMap in Resources */,
 				8EC299DF1EA0B0F20059D514 /* Statistics in Resources */,
 				8EC298971EA0B0F20059D514 /* Vec2 in Resources */,
 				8EC299771EA0B0F20059D514 /* PropertyManager in Resources */,
+				8E62940B1EC1C8F400A2C260 /* stone_ground.png in Resources */,
+				8E62940A1EC1C8F400A2C260 /* stone_ground.jpeg in Resources */,
 				8EC299F31EA0B0F20059D514 /* Export in Resources */,
 				8EC298231EA0B0F20059D514 /* Endian in Resources */,
 				8EC299101EA0B0F20059D514 /* Technique in Resources */,
@@ -3180,9 +3188,11 @@
 				8EC299B01EA0B0F20059D514 /* Version in Resources */,
 				8EC2987A1EA0B0F20059D514 /* StateSet in Resources */,
 				8EC2997B1EA0B0F20059D514 /* ConvexPolyhedron in Resources */,
-				8EC29A841EA0B21D0059D514 /* stone_ground.jpeg in Resources */,
+				8E6293ED1EC1C8F400A2C260 /* frg_shadow.glsl in Resources */,
+				8E6294071EC1C8F400A2C260 /* island.png in Resources */,
 				8EC2997E1EA0B0F20059D514 /* LightSpacePerspectiveShadowMap in Resources */,
 				8EC298241EA0B0F20059D514 /* Export in Resources */,
+				8E6293E41EC1C8F400A2C260 /* cm_depth_pack.glsl in Resources */,
 				8EC298591EA0B0F20059D514 /* OperationThread in Resources */,
 				8EC298791EA0B0F20059D514 /* StateAttributeCallback in Resources */,
 				8EC298481EA0B0F20059D514 /* Matrix in Resources */,
@@ -3190,10 +3200,8 @@
 				8EC299471EA0B0F20059D514 /* CenteredPlacer in Resources */,
 				8EC2981B1EA0B0F20059D514 /* CullingSet in Resources */,
 				8EC29A101EA0B0F20059D514 /* ViewerEventHandlers in Resources */,
-				8EC29A6D1EA0B21D0059D514 /* vtx_clip_plane.glsl in Resources */,
 				8EC298D11EA0B0F20059D514 /* Skeleton in Resources */,
 				8EC299561EA0B0F20059D514 /* ForceOperator in Resources */,
-				8EC29A781EA0B21D0059D514 /* vtx_video_disp.glsl in Resources */,
 				8EC297FD1EA0B0F20059D514 /* AudioStream in Resources */,
 				8EC298901EA0B0F20059D514 /* TransferFunction in Resources */,
 				8EC299331EA0B0F20059D514 /* RotateSphereDragger in Resources */,
@@ -3204,6 +3212,7 @@
 				8EC299231EA0B0F20059D514 /* OrbitManipulator in Resources */,
 				8EC299B61EA0B0F20059D514 /* KerningType in Resources */,
 				8EC2999B1EA0B0F20059D514 /* LightPointNode in Resources */,
+				8E6293FB1EC1C8F400A2C260 /* frg_video_disp.glsl in Resources */,
 				8EC298621EA0B0F20059D514 /* Polytope in Resources */,
 				8EC2998F1EA0B0F20059D514 /* ViewDependentShadowTechnique in Resources */,
 				8EC298191EA0B0F20059D514 /* CopyOp in Resources */,
@@ -3219,7 +3228,6 @@
 				8EC297FB1EA0B0F20059D514 /* Array in Resources */,
 				8EC2992C1EA0B0F20059D514 /* Command in Resources */,
 				8EC298501EA0B0F20059D514 /* NodeTrackerCallback in Resources */,
-				8EC29A6F1EA0B21D0059D514 /* vtx_simple_pass.glsl in Resources */,
 				8EC298341EA0B0F20059D514 /* GraphicsCostEstimator in Resources */,
 				8EC298691EA0B0F20059D514 /* Quat in Resources */,
 				8EC299CD1EA0B0F20059D514 /* OperationArrayFunctor in Resources */,
@@ -3232,7 +3240,6 @@
 				8EC298A91EA0B0F20059D514 /* Vec4 in Resources */,
 				8EC2986C1EA0B0F20059D514 /* RenderInfo in Resources */,
 				8EC299581EA0B0F20059D514 /* LinearInterpolator in Resources */,
-				8EC29A851EA0B21D0059D514 /* stone_ground.png in Resources */,
 				8EC297ED1EA0B0F20059D514 /* Block in Resources */,
 				8EC298F11EA0B0F20059D514 /* fstream in Resources */,
 				8EC299031EA0B0F20059D514 /* Version in Resources */,
@@ -3240,20 +3247,26 @@
 				8EC299F71EA0B0F20059D514 /* Property in Resources */,
 				8EC298CA1EA0B0F20059D514 /* LinkVisitor in Resources */,
 				8EC298BC1EA0B0F20059D514 /* ActionVisitor in Resources */,
+				8E6293F61EC1C8F400A2C260 /* vtx_with_cluster.glsl in Resources */,
 				8EC298DB1EA0B0F20059D514 /* Target in Resources */,
 				8EC298251EA0B0F20059D514 /* fast_back_stack in Resources */,
 				8EC298871EA0B0F20059D514 /* Texture1D in Resources */,
 				8EC298921EA0B0F20059D514 /* TriangleFunctor in Resources */,
 				8EC299071EA0B0F20059D514 /* BumpMapping in Resources */,
+				8E6293EF1EC1C8F400A2C260 /* vtx_base.glsl in Resources */,
 				8EC299A41EA0B0F20059D514 /* ShapeAttribute in Resources */,
 				8EC29A0F1EA0B0F20059D514 /* Version in Resources */,
 				8EC298AA1EA0B0F20059D514 /* Vec4b in Resources */,
+				8E6293FE1EC1C8F400A2C260 /* vtx_video_disp.glsl in Resources */,
 				8EC29A131EA0B0F20059D514 /* Window in Resources */,
 				8EC298DF1EA0B0F20059D514 /* UpdateMaterial in Resources */,
+				8E6294061EC1C8F400A2C260 /* grass_yellow.png in Resources */,
 				8EC2985F1EA0B0F20059D514 /* PolygonMode in Resources */,
 				8EC298C21EA0B0F20059D514 /* BoneMapVisitor in Resources */,
 				8EC299B41EA0B0F20059D514 /* Font3D in Resources */,
+				8E6293FA1EC1C8F400A2C260 /* frg_shadowmap_es.glsl in Resources */,
 				8EC298B61EA0B0F20059D514 /* Action in Resources */,
+				8E6294081EC1C8F400A2C260 /* particle_fire.png in Resources */,
 				8EC29A2E1EA0B0F30059D514 /* LaunchScreen.storyboard in Resources */,
 				8EC298C01EA0B0F20059D514 /* BasicAnimationManager in Resources */,
 				8EC299321EA0B0F20059D514 /* RotateCylinderDragger in Resources */,
@@ -3271,6 +3284,7 @@
 				8EC298261EA0B0F20059D514 /* Fog in Resources */,
 				8EC299D71EA0B0F20059D514 /* RenderStage in Resources */,
 				8EC299201EA0B0F20059D514 /* KeySwitchMatrixManipulator in Resources */,
+				8E62940C1EC1C8F400A2C260 /* stone_ground_normal.png in Resources */,
 				8EC2993C1EA0B0F20059D514 /* TrackballDragger in Resources */,
 				8EC299D61EA0B0F20059D514 /* RenderLeaf in Resources */,
 				8EC2988B1EA0B0F20059D514 /* Texture3D in Resources */,
@@ -3279,28 +3293,24 @@
 				8EC298B71EA0B0F20059D514 /* ActionAnimation in Resources */,
 				8EC299861EA0B0F20059D514 /* ShadowMap in Resources */,
 				8EC297F11EA0B0F20059D514 /* Mutex in Resources */,
-				8EC29A601EA0B21D0059D514 /* cm_depth_pack.glsl in Resources */,
 				8EC298571EA0B0F20059D514 /* OccluderNode in Resources */,
 				8EC298BF1EA0B0F20059D514 /* AnimationUpdateCallback in Resources */,
 				8EC298631EA0B0F20059D514 /* PositionAttitudeTransform in Resources */,
 				8EC298D71EA0B0F20059D514 /* StackedTransformElement in Resources */,
 				8EC298531EA0B0F20059D514 /* Object in Resources */,
-				8EC29A7B1EA0B21D0059D514 /* dirt.jpg in Resources */,
 				8EC298B81EA0B0F20059D514 /* ActionBlendIn in Resources */,
 				8EC298F71EA0B0F20059D514 /* ObjectWrapper in Resources */,
 				8EC2999E1EA0B0F20059D514 /* MultiSwitch in Resources */,
 				8EC299761EA0B0F20059D514 /* PickEventHandler in Resources */,
 				8EC299961EA0B0F20059D514 /* HeightAboveTerrain in Resources */,
 				8EC299651EA0B0F20059D514 /* PrecipitationEffect in Resources */,
+				8E6293FD1EC1C8F400A2C260 /* vtx_phong_es.glsl in Resources */,
 				8EC299341EA0B0F20059D514 /* Scale1DDragger in Resources */,
-				8EC29A761EA0B21D0059D514 /* vtx_phong.glsl in Resources */,
-				8EC29A811EA0B21D0059D514 /* island.png in Resources */,
 				8EC2984F1EA0B0F20059D514 /* NodeCallback in Resources */,
 				8EC299691EA0B0F20059D514 /* range in Resources */,
 				8EC2996F1EA0B0F20059D514 /* SmokeTrailEffect in Resources */,
 				8EC2986E1EA0B0F20059D514 /* Scissor in Resources */,
 				8EC298A21EA0B0F20059D514 /* Vec3d in Resources */,
-				8EC29A641EA0B21D0059D514 /* frg_camera.glsl in Resources */,
 				8EC29A291EA0B0F30059D514 /* camera_para.dat in Resources */,
 				8EC299AC1EA0B0F20059D514 /* Terrain in Resources */,
 				8EC298FF1EA0B0F20059D514 /* Registry in Resources */,
@@ -3319,7 +3329,6 @@
 				8EC299371EA0B0F20059D514 /* Selection in Resources */,
 				8EC29A061EA0B0F20059D514 /* PdfReader in Resources */,
 				8EC2982A1EA0B0F20059D514 /* FrontFace in Resources */,
-				8EC29A6C1EA0B21D0059D514 /* vtx_border_pass.glsl in Resources */,
 				8EC298991EA0B0F20059D514 /* Vec2d in Resources */,
 				8EC298AD1EA0B0F20059D514 /* Vec4i in Resources */,
 				8EC297EC1EA0B0F20059D514 /* Barrier in Resources */,
@@ -3328,12 +3337,14 @@
 				8EC29A081EA0B0F20059D514 /* ScriptEngine in Resources */,
 				8EC299F21EA0B0F20059D514 /* ViewerEventHandlers in Resources */,
 				8EC2995A1EA0B0F20059D514 /* ModularProgram in Resources */,
+				8E6293E81EC1C8F400A2C260 /* frg_camera.glsl in Resources */,
 				8EC298DD1EA0B0F20059D514 /* TimelineAnimationManager in Resources */,
 				8EC299731EA0B0F20059D514 /* CompileSlideCallback in Resources */,
 				8EC299191EA0B0F20059D514 /* EventVisitor in Resources */,
 				8EC299DC1EA0B0F20059D514 /* Simplifier in Resources */,
 				8EC299051EA0B0F20059D514 /* XmlParser in Resources */,
 				8EC299F51EA0B0F20059D514 /* Layer in Resources */,
+				8E6293E51EC1C8F400A2C260 /* cm_uniforms.glsl in Resources */,
 				8EC299181EA0B0F20059D514 /* EventQueue in Resources */,
 				8EC299921EA0B0F20059D514 /* DOFTransform in Resources */,
 				8EC298A01EA0B0F20059D514 /* Vec3 in Resources */,
@@ -3341,8 +3352,10 @@
 				8EC2980C1EA0B0F20059D514 /* ClampColor in Resources */,
 				8EC299531EA0B0F20059D514 /* FireEffect in Resources */,
 				8EC298E41EA0B0F20059D514 /* AuthenticationMap in Resources */,
+				8E6293F51EC1C8F400A2C260 /* vtx_uniforms.glsl in Resources */,
 				8EC298D31EA0B0F20059D514 /* StackedQuaternionElement in Resources */,
 				8EC2995F1EA0B0F20059D514 /* ParticleEffect in Resources */,
+				8E6293F81EC1C8F400A2C260 /* frg_phong_es.glsl in Resources */,
 				8EC299B71EA0B0F20059D514 /* String in Resources */,
 				8EC298461EA0B0F20059D514 /* Material in Resources */,
 				8EC299751EA0B0F20059D514 /* KeyEventHandler in Resources */,
@@ -3354,8 +3367,8 @@
 				8EC298F01EA0B0F20059D514 /* FileUtils in Resources */,
 				8EC2997F1EA0B0F20059D514 /* MinimalCullBoundsShadowMap in Resources */,
 				8EC298471EA0B0F20059D514 /* Math in Resources */,
-				8EC29A791EA0B21D0059D514 /* water.glsl in Resources */,
 				8EC297F01EA0B0F20059D514 /* Exports in Resources */,
+				8E6293F01EC1C8F400A2C260 /* vtx_border_pass.glsl in Resources */,
 				8EC299EF1EA0B0F20059D514 /* View in Resources */,
 				8EC298B41EA0B0F20059D514 /* View in Resources */,
 				8EC2983A1EA0B0F20059D514 /* ImageStream in Resources */,
@@ -3364,7 +3377,6 @@
 				8EC298F81EA0B0F20059D514 /* Options in Resources */,
 				8EC299131EA0B0F20059D514 /* AnimationPathManipulator in Resources */,
 				8EC299391EA0B0F20059D514 /* TabBoxTrackballDragger in Resources */,
-				8EC29A661EA0B21D0059D514 /* frg_light.glsl in Resources */,
 				8EC298601EA0B0F20059D514 /* PolygonOffset in Resources */,
 				8EC297FE1EA0B0F20059D514 /* AutoTransform in Resources */,
 				8EC299381EA0B0F20059D514 /* TabBoxDragger in Resources */,
@@ -3382,16 +3394,17 @@
 				8EC299511EA0B0F20059D514 /* ExplosionOperator in Resources */,
 				8EC299291EA0B0F20059D514 /* UFOManipulator in Resources */,
 				8EC299911EA0B0F20059D514 /* ColorRange in Resources */,
+				8E6293F31EC1C8F400A2C260 /* vtx_in_out.glsl in Resources */,
 				8EC2984D1EA0B0F20059D514 /* Multisample in Resources */,
 				8EC299811EA0B0F20059D514 /* MinimalShadowMap in Resources */,
 				8EC297F91EA0B0F20059D514 /* ApplicationUsage in Resources */,
 				8EC2986D1EA0B0F20059D514 /* SampleMaski in Resources */,
 				8EC299C21EA0B0F20059D514 /* DrawElementTypeSimplifier in Resources */,
 				8EC2990C1EA0B0F20059D514 /* Outline in Resources */,
-				8EC29A801EA0B21D0059D514 /* grass_yellow.png in Resources */,
 				8EC2988A1EA0B0F20059D514 /* Texture2DMultisample in Resources */,
 				8EC298E71EA0B0F20059D514 /* DatabasePager in Resources */,
 				8E4B1B221EB9A40E00207B0B /* 人民币.nftmarker in Resources */,
+				8E6294041EC1C8F400A2C260 /* grass_green.png in Resources */,
 				8EC299EE1EA0B0F20059D514 /* Version in Resources */,
 				8EC29A0C1EA0B0F20059D514 /* Types in Resources */,
 				8EC299011EA0B0F20059D514 /* SharedStateManager in Resources */,
@@ -3404,7 +3417,6 @@
 				8EC297F71EA0B0F20059D514 /* AlphaFunc in Resources */,
 				8EC298391EA0B0F20059D514 /* ImageSequence in Resources */,
 				8EC299211EA0B0F20059D514 /* MultiTouchTrackballManipulator in Resources */,
-				8EC29A681EA0B21D0059D514 /* frg_projector.glsl in Resources */,
 				8EC2992A1EA0B0F20059D514 /* Version in Resources */,
 				8EC298721EA0B0F20059D514 /* ShaderAttribute in Resources */,
 				8EC299091EA0B0F20059D514 /* Effect in Resources */,
@@ -3419,7 +3431,6 @@
 				8EC2995D1EA0B0F20059D514 /* OrbitOperator in Resources */,
 				8EC299671EA0B0F20059D514 /* RadialShooter in Resources */,
 				8EC297F81EA0B0F20059D514 /* AnimationPath in Resources */,
-				8EC29A7E1EA0B21D0059D514 /* grass_green.png in Resources */,
 				8EC299F11EA0B0F20059D514 /* ViewerBase in Resources */,
 				8EC298071EA0B0F20059D514 /* BufferIndexBinding in Resources */,
 				8EC29A121EA0B0F20059D514 /* Widget in Resources */,
@@ -3428,7 +3439,6 @@
 				8EC2990B1EA0B0F20059D514 /* MultiTextureControl in Resources */,
 				8EC299FC1EA0B0F20059D514 /* VolumeTile in Resources */,
 				8EC2984E1EA0B0F20059D514 /* Node in Resources */,
-				8EC29A6B1EA0B21D0059D514 /* vtx_base.glsl in Resources */,
 				8EC299451EA0B0F20059D514 /* BounceOperator in Resources */,
 				8EC298DA1EA0B0F20059D514 /* StatsVisitor in Resources */,
 				8EC2982C1EA0B0F20059D514 /* Geometry in Resources */,
@@ -3451,6 +3461,7 @@
 				8EC298011EA0B0F20059D514 /* BlendEquation in Resources */,
 				8EC299151EA0B0F20059D514 /* CameraViewSwitchManipulator in Resources */,
 				8EC298A51EA0B0F20059D514 /* Vec3s in Resources */,
+				8E6293EB1EC1C8F400A2C260 /* frg_normal.glsl in Resources */,
 				8EC298B91EA0B0F20059D514 /* ActionBlendOut in Resources */,
 				8EC2982E1EA0B0F20059D514 /* GL2Extensions in Resources */,
 				8EC299A81EA0B0F20059D514 /* Export in Resources */,
@@ -3461,12 +3472,12 @@
 				8EC298711EA0B0F20059D514 /* Shader in Resources */,
 				8EC299EC1EA0B0F20059D514 /* Renderer in Resources */,
 				8EC298A31EA0B0F20059D514 /* Vec3f in Resources */,
+				8E6293FF1EC1C8F400A2C260 /* water.glsl in Resources */,
 				8EC298431EA0B0F20059D514 /* LineWidth in Resources */,
 				8EC299121EA0B0F20059D514 /* Version in Resources */,
 				8EC2984C1EA0B0F20059D514 /* MixinVector in Resources */,
 				8EC299A01EA0B0F20059D514 /* OverlayNode in Resources */,
 				8EC298BE1EA0B0F20059D514 /* AnimationManagerBase in Resources */,
-				8EC29A671EA0B21D0059D514 /* frg_normal.glsl in Resources */,
 				8EC299D41EA0B0F20059D514 /* ReflectionMapGenerator in Resources */,
 				8EC2986B1EA0B0F20059D514 /* Referenced in Resources */,
 				8EC2995C1EA0B0F20059D514 /* Operator in Resources */,
@@ -3497,13 +3508,14 @@
 				8EC299F91EA0B0F20059D514 /* Version in Resources */,
 				8EC298D91EA0B0F20059D514 /* StatsHandler in Resources */,
 				8EC2996B1EA0B0F20059D514 /* SegmentPlacer in Resources */,
+				8E6293F41EC1C8F400A2C260 /* vtx_simple_pass.glsl in Resources */,
 				8EC298781EA0B0F20059D514 /* StateAttribute in Resources */,
+				8E6294091EC1C8F400A2C260 /* particle_point.png in Resources */,
 				8EC2989D1EA0B0F20059D514 /* Vec2ub in Resources */,
 				8EC299721EA0B0F20059D514 /* AnimationMaterial in Resources */,
 				8EC299F81EA0B0F20059D514 /* RayTracedTechnique in Resources */,
 				8EC298AC1EA0B0F20059D514 /* Vec4f in Resources */,
 				8E4B1B1E1EB9A40E00207B0B /* 人民币.fset in Resources */,
-				8EC29A701EA0B21D0059D514 /* vtx_uniforms.glsl in Resources */,
 				8EC299FE1EA0B0F20059D514 /* Browser in Resources */,
 				8EC2983E1EA0B0F20059D514 /* Light in Resources */,
 				8EC299D31EA0B0F20059D514 /* PrintVisitor in Resources */,
@@ -3512,6 +3524,7 @@
 				8EC299BA1EA0B0F20059D514 /* Text3D in Resources */,
 				8EC299481EA0B0F20059D514 /* CompositePlacer in Resources */,
 				8EC299821EA0B0F20059D514 /* OccluderGeometry in Resources */,
+				8E6293FC1EC1C8F400A2C260 /* vtx_phong.glsl in Resources */,
 				8EC298CF1EA0B0F20059D514 /* RigTransformSoftware in Resources */,
 				8EC2993D1EA0B0F20059D514 /* Translate1DDragger in Resources */,
 				8EC299D11EA0B0F20059D514 /* PolytopeIntersector in Resources */,
@@ -3524,7 +3537,7 @@
 				8EC299021EA0B0F20059D514 /* StreamOperator in Resources */,
 				8EC2984A1EA0B0F20059D514 /* Matrixf in Resources */,
 				8EC298FB1EA0B0F20059D514 /* ParameterOutput in Resources */,
-				8EC29A651EA0B21D0059D514 /* frg_fog.glsl in Resources */,
+				8E6294001EC1C8F400A2C260 /* water_es.glsl in Resources */,
 				8EC299141EA0B0F20059D514 /* CameraManipulator in Resources */,
 				8EC299631EA0B0F20059D514 /* Placer in Resources */,
 				8EC299EA1EA0B0F20059D514 /* GraphicsWindow in Resources */,
@@ -3539,14 +3552,12 @@
 				8EC2983F1EA0B0F20059D514 /* LightModel in Resources */,
 				8EC297EE1EA0B0F20059D514 /* Condition in Resources */,
 				8EC298351EA0B0F20059D514 /* GraphicsThread in Resources */,
-				8EC29A7A1EA0B21D0059D514 /* water_es.glsl in Resources */,
 				8EC298F31EA0B0F20059D514 /* ImagePager in Resources */,
 				8EC2980B1EA0B0F20059D514 /* CameraView in Resources */,
 				8EC297EF1EA0B0F20059D514 /* Config in Resources */,
 				8EC299AB1EA0B0F20059D514 /* Locator in Resources */,
 				8EC299441EA0B0F20059D514 /* AngularDampingOperator in Resources */,
 				8EC2980D1EA0B0F20059D514 /* ClearNode in Resources */,
-				8EC29A751EA0B21D0059D514 /* frg_video_disp.glsl in Resources */,
 				8EC298ED1EA0B0F20059D514 /* ExternalFileWriter in Resources */,
 				8EC299B51EA0B0F20059D514 /* Glyph in Resources */,
 				8EC299DE1EA0B0F20059D514 /* StateGraph in Resources */,
@@ -3563,6 +3574,7 @@
 				8EC299BC1EA0B0F20059D514 /* Version in Resources */,
 				8EC298661EA0B0F20059D514 /* Program in Resources */,
 				8EC2996D1EA0B0F20059D514 /* SinkOperator in Resources */,
+				8E6294011EC1C8F400A2C260 /* dirt.jpg in Resources */,
 				8EC299061EA0B0F20059D514 /* AnisotropicLighting in Resources */,
 				8EC2993A1EA0B0F20059D514 /* TabPlaneDragger in Resources */,
 				8EC298F61EA0B0F20059D514 /* InputStream in Resources */,
@@ -3590,7 +3602,6 @@
 				8EC299E61EA0B0F20059D514 /* Version in Resources */,
 				8EC299AA1EA0B0F20059D514 /* Layer in Resources */,
 				8EC298D01EA0B0F20059D514 /* Sampler in Resources */,
-				8EC29A611EA0B21D0059D514 /* cm_uniforms.glsl in Resources */,
 				8EC2992D1EA0B0F20059D514 /* CommandManager in Resources */,
 				8EC299281EA0B0F20059D514 /* TrackballManipulator in Resources */,
 				8EC299301EA0B0F20059D514 /* Export in Resources */,
@@ -3598,7 +3609,6 @@
 				8EC2987E1EA0B0F20059D514 /* Switch in Resources */,
 				8EC298CC1EA0B0F20059D514 /* RigGeometry in Resources */,
 				8EC298101EA0B0F20059D514 /* ClusterCullingCallback in Resources */,
-				8EC29A731EA0B21D0059D514 /* frg_shadowmap.glsl in Resources */,
 				8EC298271EA0B0F20059D514 /* FragmentProgram in Resources */,
 				8EC298001EA0B0F20059D514 /* BlendColor in Resources */,
 				8EC299E01EA0B0F20059D514 /* TangentSpaceGenerator in Resources */,
@@ -3616,8 +3626,6 @@
 				8EC299FD1EA0B0F20059D514 /* Box in Resources */,
 				8EC299401EA0B0F20059D514 /* TranslatePlaneDragger in Resources */,
 				8EC299BF1EA0B0F20059D514 /* CullVisitor in Resources */,
-				8EC29A771EA0B21D0059D514 /* vtx_phong_es.glsl in Resources */,
-				8EC29A631EA0B21D0059D514 /* frg_base.glsl in Resources */,
 				8EC299611EA0B0F20059D514 /* ParticleSystem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
